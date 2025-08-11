@@ -1,9 +1,9 @@
 <template>
-  <Navbar />
+  <NavbarComponent />
   <slot />
   <Footer />
 </template>
 <script setup lang="ts">
-import Navbar from "~/components/Navbar.vue";
+import NavbarComponent from "~/components/NavbarComponent.vue";
 import Footer from "~/components/Footer.vue";
 </script>
