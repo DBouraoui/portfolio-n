@@ -63,5 +63,10 @@
         }
       }
     }
+  },
+
+  "projects": {
+    "title": "My Projects",
+    "description": "Discover my achievements and projects developed during my training."
   }
 }

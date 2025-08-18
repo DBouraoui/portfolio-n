@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Mon Projet A",
+    "subTitle": "Projet a destination de créer un eapplication mobile.",
+    "description": "Ce projet consiste à créer une application mobile pour gérer des tâches.",
+    "tags": ["Web", "Nuxt", "Frontend"],
+    "technologies": ["Nuxt 3", "TypeScript", "TailwindCSS"],
+    "creationDate": "2025-08-18",
+    "timeToDev": "3 semaines",
+    "caliopiSkills": ["Gestion de projet", "Analyse des besoins", "Développement Frontend"],
+    "links": {
+      "github": "https://github.com/monusername/projet-a",
+      "live": "https://monprojet-a.com"
+    },
+    "images": {
+      "card": "/head.png",
+      "carousel": ["/head.png", "/head.png", "/head.png"]
+    }
+  },
+  {
+    "title": "Mon Projet B",
+    "subTitle": "Projet a destination de créer une application web.",
+    "description": "Ce projet consiste à créer une application web pour gérer des tâches.",
+    "tags": ["Web", "Nuxt", "Frontend"],
+    "technologies": ["Nuxt 3", "TypeScript", "TailwindCSS"],
+    "creationDate": "2025-08-18",
+    "timeToDev": "3 semaines",
+    "caliopiSkills": ["Gestion de projet", "Analyse des besoins", "Développement Frontend"],
+    "links": {
+      "github": "https://github.com/monusername/projet-a"
+    },
+    "images": {
+      "card": "/head.png",
+      "carousel": ["/head.png"]
+    }
+  }
+]

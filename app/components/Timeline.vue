@@ -89,7 +89,7 @@ const timeline = [
             </div>
 
             <div
-              class="ml-8 flex-1 bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 group-hover:shadow-xl transition-all duration-300"
+              class="ml-8 flex-1 bg-white dark:bg-gray-900 border border-emerald-800 rounded-xl shadow-lg p-8 group-hover:shadow-xl transition-all duration-300"
             >
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                 <div>
@@ -105,7 +105,6 @@ const timeline = [
                 </div>
               </div>
 
-              <!-- Période -->
               <div class="mb-4">
                 <span
                   class="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider"

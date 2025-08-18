@@ -3,4 +3,5 @@
   <AboutMe />
   <SkillSection />
   <Timeline />
+  <ProjectCard />
 </template>
