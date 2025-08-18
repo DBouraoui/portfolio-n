@@ -1,0 +1,29 @@
+{
+  "common": {
+    "full_name": "Dylan Bouraoui",
+    "navigation": "Navigation",
+    "home": "Accueil",
+    "skills": "Compétences",
+    "project": "Projets",
+    "contact": "Contact",
+    "reseau": "Réseaux",
+    "and": "et"
+  },
+
+  "home": {
+    "welcome": "Bonjour",
+    "see_my_project": "Voir mes projets",
+    "contact_me": "Me contacter",
+    "hello_im": "Bonjour, je suis ",
+    "developper_web_full_stack": "Développeur Web Full-Stack, spécialisé en "
+  },
+  "about": {
+    "about_me": "À propos de moi",
+    "description": "Passionné par le développement, je prends un réel plaisir à concevoir des applications répondant à des besoins concrets.\nJe privilégie le back-end, notamment la création d’API et leur déploiement via différentes solutions adaptées.\nJ’accorde également une attention particulière à l’interface utilisateur, afin d’offrir une expérience soignée, fluide et accessible.",
+    "technologies": "Technologies"
+  },
+
+  "footer": {
+    "all_right_reserved": "Tous droits réservés"
+  }
+}

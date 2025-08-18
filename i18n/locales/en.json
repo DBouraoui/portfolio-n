@@ -1,0 +1,24 @@
+{
+  "common": {
+    "full_name": "Dylan Bouraoui",
+    "navigation": "Navigation",
+    "home": "Home",
+    "skills": "Skills",
+    "project": "Projects",
+    "contact": "Contact",
+    "reseau": "Networks",
+    "and": "and"
+  },
+
+  "home": {
+    "welcome": "Hello",
+    "see_my_project": "See my projects",
+    "contact_me": "Contact me",
+    "hello_im": "Hello, I'm ",
+    "developper_web_full_stack": "Full-Stack Web Developer, specialized in "
+  },
+
+  "footer": {
+    "all_right_reserved": "All rights reserved"
+  }
+}
