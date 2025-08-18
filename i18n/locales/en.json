@@ -14,11 +14,54 @@
     "welcome": "Hello",
     "see_my_project": "See my projects",
     "contact_me": "Contact me",
-    "hello_im": "Hello, I'm ",
+    "hello_im": "Hello, I am ",
     "developper_web_full_stack": "Full-Stack Web Developer, specialized in "
+  },
+  "about": {
+    "about_me": "About Me",
+    "description": "Passionate about development, I take real pleasure in designing applications that meet concrete needs.\nI focus on back-end development, particularly creating APIs and deploying them through suitable solutions.\nI also pay special attention to the user interface, to provide a refined, smooth, and accessible experience.",
+    "technologies": "Technologies"
   },
 
   "footer": {
     "all_right_reserved": "All rights reserved"
+  },
+
+  "skills": {
+    "title": "My Skills",
+    "description": "Technologies and tools I master to create modern web applications.",
+    "interface": "User Interface",
+    "api": "Server & API",
+    "devops": "DevOps & Database",
+    "tools": "Tools"
+  },
+
+  "timeline": {
+    "title": "Education",
+    "description": "{'My web development training path at Web@cadémie Epitech.'}",
+    "items": {
+      "0": {
+        "title": "{'Start at Web@cadémie - Epitech'}",
+        "subtitle": "Intensive web development training",
+        "description": "Comprehensive full-stack web development training",
+        "details": {
+          "0": "Intensive bootcamp the first month",
+          "1": "Practical projects lasting 1 to 3 weeks",
+          "2": "Native PHP, CSS, JavaScript",
+          "3": "Modern frameworks after 3 months"
+        }
+      },
+      "1": {
+        "title": "{'Work-Study at Web@cadémie'}",
+        "subtitle": "Company/school rhythm",
+        "description": "14 months of work-study - 3 weeks company / 1 week school",
+        "details": {
+          "0": "Practical application of knowledge",
+          "1": "Professional projects",
+          "2": "Continuous skill improvement",
+          "3": "Technology specialization"
+        }
+      }
+    }
   }
 }

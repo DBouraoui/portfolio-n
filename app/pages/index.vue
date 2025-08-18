@@ -1,8 +1,6 @@
 <template>
   <HeroSection />
   <AboutMe />
+  <SkillSection />
+  <Timeline />
 </template>
-
-<script setup lang="ts">
-import HeroSection from '~/components/Hero-section.vue'
-</script>

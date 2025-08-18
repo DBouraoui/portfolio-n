@@ -25,5 +25,43 @@
 
   "footer": {
     "all_right_reserved": "Tous droits réservés"
+  },
+
+  "skills": {
+    "title": "Mes Compétences",
+    "description": "Technologies et outils que je maîtrise pour créer des applications web modernes.",
+    "interface": "Interface utilisateur",
+    "api": "Serveur & API",
+    "devops": " DevOps & Base de données",
+    "tools": "Outils"
+  },
+
+  "timeline": {
+    "title": "Formation",
+    "description": "{'Mon parcours de formation en développement web à la Web@cadémie Epitech.'}",
+    "items": {
+      "0": {
+        "title": "{'Début Web@cadémie - Epitech'}",
+        "subtitle": "Formation intensive développement web",
+        "description": "Formation complète en développement web full-stack",
+        "details": {
+          "0": "Piscine intensive le premier mois",
+          "1": "Projets pratiques de 1 à 3 semaines",
+          "2": "PHP natif, CSS, JavaScript",
+          "3": "Frameworks modernes après 3 mois"
+        }
+      },
+      "1": {
+        "title": "{'Alternance Web@cadémie'}",
+        "subtitle": "Rythme entreprise/école",
+        "description": "14 mois d'alternance - 3 semaines entreprise / 1 semaine école",
+        "details": {
+          "0": "Application pratique des connaissances",
+          "1": "Projets professionnels",
+          "2": "Montée en compétences continue",
+          "3": "Spécialisation technologies"
+        }
+      }
+    }
   }
 }
