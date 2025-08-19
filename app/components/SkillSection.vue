@@ -89,8 +89,9 @@ const skills = {
       </div>
     </div>
     <div class="max-w-4xl mx-auto mt-16 space-y-10">
-
-      <div class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800">
+      <div
+        class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800"
+      >
         <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
           {{ $t('skills.fullstack') }}
         </p>
@@ -107,7 +108,9 @@ const skills = {
         </ul>
       </div>
 
-      <div class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800">
+      <div
+        class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800"
+      >
         <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
           {{ $t('skills.interest') }}
         </p>
@@ -122,8 +125,6 @@ const skills = {
           <li>{{ $t('skills.ambitions.solutions') }}</li>
         </ul>
       </div>
-
     </div>
-
   </section>
 </template>

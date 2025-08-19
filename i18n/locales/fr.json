@@ -54,12 +54,13 @@
     }
   },
 
-
   "timeline": {
+    "future": "À venir",
     "title": "Formation",
     "description": "{'Mon parcours de formation en développement web à la Web@cadémie Epitech.'}",
     "items": {
       "0": {
+        "date": "13 Nov 2023",
         "title": "{'Début Web@cadémie - Epitech'}",
         "subtitle": "Formation intensive développement web",
         "description": "Formation complète en développement web full-stack",
@@ -71,6 +72,7 @@
         }
       },
       "1": {
+        "date": "23 Sep 2024",
         "title": "{'Alternance Web@cadémie'}",
         "subtitle": "Rythme entreprise/école",
         "description": "14 mois d'alternance - 3 semaines entreprise / 1 semaine école",
@@ -79,6 +81,30 @@
           "1": "Projets professionnels",
           "2": "Montée en compétences continue",
           "3": "Spécialisation technologies"
+        }
+      },
+      "2": {
+        "date": "5 janvier 2026 - 20 juin 2026",
+        "title": "DevOps Engineer & Cloud Architect",
+        "subtitle": "Spécialisation avancée en infrastructures et cloud",
+        "description": "Développer et perfectionner mes compétences en DevOps et en architecture cloud pour renforcer mon expertise et préparer des projets d'envergure.",
+        "details": {
+          "0": "Diplôme de niveau BAC+3",
+          "1": "Compétences avancées en Cloud et DevOps",
+          "2": "Mise en pratique à travers des projets personnels et professionnels",
+          "3": "Approfondissement des pratiques DevSecOps et automatisation"
+        }
+      },
+      "3": {
+        "date": "Oct 2026 - Oct 2028",
+        "title": "Master of Science - Epitech",
+        "subtitle": "Cursus en alternance orienté Cloud et Big Data",
+        "description": "Dans un futur à moyen terme, j’aimerais intégrer Epitech afin de suivre le Master of Science en alternance. Cela me permettrait de consolider mon parcours, de valider ma reconversion dans l’informatique et d’approfondir encore davantage mon expertise tout en découvrant de nouvelles technologies.",
+        "details": {
+          "0": "Spécialisation en Cloud et Big Data",
+          "1": "24 mois d’alternance en entreprise",
+          "2": "Développement de projets concrets à forte valeur ajoutée",
+          "3": "Renforcement de l’expertise en innovation et nouvelles technologies"
         }
       }
     }

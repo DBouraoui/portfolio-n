@@ -55,10 +55,12 @@
   },
 
   "timeline": {
+    "future": "Upcoming",
     "title": "Education",
     "description": "{'My web development training path at Web@cadémie Epitech.'}",
     "items": {
       "0": {
+        "date": "13 Nov 2023",
         "title": "{'Start at Web@cadémie - Epitech'}",
         "subtitle": "Intensive web development training",
         "description": "Comprehensive full-stack web development training",
@@ -70,6 +72,7 @@
         }
       },
       "1": {
+        "date": "23 Sep 2024",
         "title": "{'Work-Study at Web@cadémie'}",
         "subtitle": "Company/school rhythm",
         "description": "14 months of work-study - 3 weeks company / 1 week school",
@@ -78,6 +81,30 @@
           "1": "Professional projects",
           "2": "Continuous skill improvement",
           "3": "Technology specialization"
+        }
+      },
+      "2": {
+        "date": "January 5, 2026 - June 20, 2026",
+        "title": "DevOps Engineer & Cloud Architect",
+        "subtitle": "Advanced specialization in infrastructure and cloud",
+        "description": "Develop and enhance my skills in DevOps and cloud architecture to strengthen my expertise and prepare for large-scale projects.",
+        "details": {
+          "0": "Bachelor’s degree (BAC+3 equivalent)",
+          "1": "Advanced skills in Cloud and DevOps",
+          "2": "Practical experience through personal and professional projects",
+          "3": "Deepening DevSecOps practices and automation"
+        }
+      },
+      "3": {
+        "date": "Oct 2026 - Oct 2028",
+        "title": "Master of Science - Epitech",
+        "subtitle": "Work-study program focused on Cloud and Big Data",
+        "description": "In the medium-term future, I would like to join Epitech to complete the Master of Science work-study program. This would allow me to consolidate my career path, fully validate my transition into IT, and further deepen my expertise while discovering new technologies.",
+        "details": {
+          "0": "Specialization in Cloud and Big Data",
+          "1": "24 months of work-study experience",
+          "2": "Development of impactful, real-world projects",
+          "3": "Strengthening expertise in innovation and emerging technologies"
         }
       }
     }

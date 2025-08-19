@@ -1,7 +1,7 @@
-<script setup>
+<script setup >
 const timeline = [
   {
-    date: '13 Nov 2023',
+    date: 'timeline.items.0.date',
     title: 'timeline.items.0.title',
     subtitle: 'timeline.items.0.subtitle',
     period: '13 Nov 2023 - 23 Sep 2024',
@@ -15,7 +15,7 @@ const timeline = [
     ],
   },
   {
-    date: '23 Sep 2024',
+    date: 'timeline.items.1.date',
     title: 'timeline.items.1.title',
     subtitle: 'timeline.items.1.subtitle',
     period: '23 Sep 2024 - 14 Nov 2025',
@@ -26,6 +26,34 @@ const timeline = [
       'timeline.items.1.details.1',
       'timeline.items.1.details.2',
       'timeline.items.1.details.3',
+    ],
+  },
+  {
+    date: 'timeline.items.2.date',
+    title: 'timeline.items.2.title',
+    subtitle: 'timeline.items.2.subtitle',
+    period: 'Future',
+    type: 'school',
+    description: 'timeline.items.2.description',
+    details: [
+      'timeline.items.2.details.0',
+      'timeline.items.2.details.1',
+      'timeline.items.2.details.2',
+      'timeline.items.2.details.3',
+    ],
+  },
+  {
+    date: 'timeline.items.3.date',
+    title: 'timeline.items.3.title',
+    subtitle: 'timeline.items.3.subtitle',
+    period: 'Future',
+    type: 'work',
+    description: 'timeline.items.3.description',
+    details: [
+      'timeline.items.3.details.0',
+      'timeline.items.3.details.1',
+      'timeline.items.3.details.2',
+      'timeline.items.3.details.3',
     ],
   },
 ]
@@ -90,18 +118,31 @@ const timeline = [
             </div>
 
             <div
-              class="ml-8 flex-1 bg-white dark:bg-gray-900 border border-emerald-800 rounded-xl shadow-lg p-8 group-hover:shadow-xl transition-all duration-300"
+              :class="[
+                'ml-8 flex-1 bg-white dark:bg-gray-900 border rounded-xl shadow-lg p-8 group-hover:shadow-xl transition-all duration-300',
+                item.type === 'school' ? 'border-emerald-500' : 'border-blue-800',
+              ]"
             >
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                 <div>
-                  <h3 class="text-2xl font-semibold mb-1">{{ $t(item.title) }}</h3>
-                  <p class="text-lg text-gray-600 dark:text-gray-300">{{ $t(item.subtitle) }}</p>
+                  <h3 class="text-2xl font-semibold mb-1 flex items-center gap-2">
+                    {{ $t(item.title) }}
+                    <span
+                      v-if="item.period === 'Future'"
+                      class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-orange-100 text-blue-700 dark:bg-orange-800 dark:text-blue-200"
+                    >
+                      {{ $t('timeline.future') }}
+                    </span>
+                  </h3>
+                  <p class="text-lg text-gray-600 dark:text-gray-300">
+                    {{ $t(item.subtitle) }}
+                  </p>
                 </div>
                 <div class="mt-2 sm:mt-0">
                   <span
                     class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
                   >
-                    {{ item.date }}
+                    {{ $t(item.date) }}
                   </span>
                 </div>
               </div>
