@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen flex flex-col items-center justify-center px-8">
+  <section id="about" class="min-h-screen flex flex-col items-center justify-center px-8">
     <div class="flex justify-center relative mb-8 group">
       <div
         class="absolute -inset-2 bg-gradient-to-br from-green-400/20 to-green-500/10 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"

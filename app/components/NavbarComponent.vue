@@ -1,9 +1,15 @@
 <script setup>
 const menuItems = [
-  { label: 'Accueil', to: '/', icon: 'i-heroicons-home' },
-  { label: 'Compétences', to: '/competences', icon: 'i-heroicons-code-bracket' },
-  { label: 'Projets', to: '/projets', icon: 'i-heroicons-folder' },
-  { label: 'Contact', to: '/contact', icon: 'i-heroicons-envelope' },
+  { label: 'common.home', to: { path: '/', hash: '#hero' }, icon: 'i-heroicons-home' },
+  { label: 'common.about', to: { path: '/', hash: '#about' }, icon: 'i-lucide-info' },
+  {
+    label: 'common.graduation',
+    to: { path: '/', hash: '#graduation' },
+    icon: 'i-lucide-graduation-cap',
+  },
+  { label: 'common.skills', to: { path: '/', hash: '#skills' }, icon: 'i-heroicons-code-bracket' },
+  { label: 'common.project', to: { path: '/', hash: '#projects' }, icon: 'i-heroicons-folder' },
+  { label: 'common.contact', to: { path: '/', hash: '#contact' }, icon: 'i-heroicons-envelope' },
 ]
 </script>
 
@@ -12,7 +18,6 @@ const menuItems = [
     class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 border-b border-gray-200/50 dark:border-white/10 transition-colors"
   >
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-      <!-- Logo -->
       <NuxtLink
         to="/"
         class="text-xl font-bold text-gray-900 dark:text-white tracking-wide hover:text-green-500 dark:hover:text-green-400 transition-colors"
@@ -20,14 +25,13 @@ const menuItems = [
         D<span class="text-green-500 dark:text-green-400">B</span>
       </NuxtLink>
 
-      <!-- Menu desktop -->
-      <ul class="hidden md:flex space-x-8">
+      <ul class="hidden lg:flex space-x-8">
         <li v-for="item in menuItems" :key="item.label">
           <NuxtLink
             :to="item.to"
             class="text-gray-700 dark:text-white hover:text-green-500 dark:hover:text-green-400 transition-colors"
           >
-            {{ item.label }}
+            {{ $t(item.label) }}
           </NuxtLink>
         </li>
       </ul>
@@ -36,19 +40,16 @@ const menuItems = [
         <ColorModeButton />
         <TraductionModeButton />
 
-        <!-- Drawer mobile -->
         <USlideover
           side="left"
           class="backdrop-blur-lg bg-white/95 dark:bg-slate-900/95 border-r border-gray-200 dark:border-white/20 transition-colors"
         >
-          <!-- Bouton d'ouverture -->
           <UButton
             icon="i-heroicons-bars-3"
             variant="ghost"
-            class="cursor-pointer md:hidden text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+            class="cursor-pointer lg:hidden text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
           />
 
-          <!-- Header du drawer -->
           <template #header>
             <div class="flex items-center justify-between w-full space-x-2">
               <div class="flex items-center gap-2">
@@ -59,7 +60,6 @@ const menuItems = [
             </div>
           </template>
 
-          <!-- Corps du drawer -->
           <template #body>
             <div class="px-6 py-8">
               <ul class="space-y-1">
@@ -79,7 +79,6 @@ const menuItems = [
             </div>
           </template>
 
-          <!-- Footer du drawer -->
           <template #footer>
             <p class="text-xs text-gray-500 dark:text-white/50">
               © {{ new Date().getFullYear() }} Dylan Bouraoui

@@ -1,5 +1,6 @@
 <template>
   <section
+    id="hero"
     class="relative min-h-screen flex items-center justify-center text-gray-900 dark:text-gray-100 overflow-hidden"
   >
     <div class="max-w-4xl mx-auto px-6 text-center">

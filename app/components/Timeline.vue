@@ -33,6 +33,7 @@ const timeline = [
 
 <template>
   <section
+    id="graduation"
     class="min-h-screen flex flex-col items-center justify-center py-6 text-gray-900 dark:text-gray-100"
   >
     <div class="max-w-4xl mx-auto px-6">

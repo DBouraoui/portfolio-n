@@ -9,24 +9,42 @@
         </h2>
         <ul class="space-y-1">
           <li>
-            <NuxtLink to="/" class="hover:text-green-400 transition">{{
+            <NuxtLink :to="{ path: '/', hash: '#hero' }" class="hover:text-green-400 transition">{{
               $t('common.home')
             }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/competences" class="hover:text-green-400 transition">{{
-              $t('common.skills')
+            <NuxtLink :to="{ path: '/', hash: '#about' }" class="hover:text-green-400 transition">{{
+              $t('common.about')
             }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/projets" class="hover:text-green-400 transition">{{
-              $t('common.project')
-            }}</NuxtLink>
+            <NuxtLink
+              :to="{ path: '/', hash: '#graduation' }"
+              class="hover:text-green-400 transition"
+              >{{ $t('common.graduation') }}</NuxtLink
+            >
           </li>
           <li>
-            <NuxtLink to="/contact" class="hover:text-green-400 transition">{{
-              $t('common.contact')
-            }}</NuxtLink>
+            <NuxtLink
+              :to="{ path: '/', hash: '#skills' }"
+              class="hover:text-green-400 transition"
+              >{{ $t('common.skills') }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              :to="{ path: '/', hash: '#projects' }"
+              class="hover:text-green-400 transition"
+              >{{ $t('common.project') }}</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink
+              :to="{ path: '/', hash: '#contact' }"
+              class="hover:text-green-400 transition"
+              >{{ $t('common.contact') }}</NuxtLink
+            >
           </li>
         </ul>
       </div>
@@ -62,3 +80,4 @@
     </div>
   </footer>
 </template>
+<script setup lang="ts"></script>
