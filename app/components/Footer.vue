@@ -4,7 +4,7 @@
       class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left"
     >
       <div class="space-y-2">
-        <h2 class="font-semibold text-lg text-white dark:text-gray-100">
+        <h2 class="font-semibold text-lg text-gray-900 dark:text-gray-100">
           {{ $t('common.navigation') }}
         </h2>
         <ul class="space-y-1">
@@ -50,7 +50,7 @@
       </div>
 
       <div>
-        <h2 class="font-semibold text-lg text-white dark:text-gray-100 mb-2">
+        <h2 class="font-semibold text-lg text-gray-900 dark:text-gray-100 mb-2">
           {{ $t('common.reseau') }}
         </h2>
         <div class="flex justify-center md:justify-start gap-4">

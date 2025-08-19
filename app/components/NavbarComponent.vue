@@ -19,7 +19,7 @@ const menuItems = [
   >
     <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
       <NuxtLink
-        to="/"
+        :to="{ path: '/', hash: '#hero' }"
         class="text-xl font-bold text-gray-900 dark:text-white tracking-wide hover:text-green-500 dark:hover:text-green-400 transition-colors"
       >
         D<span class="text-green-500 dark:text-green-400">B</span>

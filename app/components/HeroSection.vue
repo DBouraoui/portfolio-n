@@ -20,6 +20,7 @@
         <div class="flex flex-col sm:flex-row gap-4 pt-8 justify-center">
           <UButton
             size="lg"
+            :to="{ path: '/', hash: '#projects' }"
             color="primary"
             variant="solid"
             class="bg-green-500 hover:bg-green-400 border-none cursor-pointer"
