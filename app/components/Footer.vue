@@ -37,7 +37,7 @@
         </h2>
         <div class="flex justify-center md:justify-start gap-4">
           <NuxtLink
-            to="https://github.com/tonprofil"
+            to="https://github.com/DBouraoui"
             target="_blank"
             aria-label="GitHub"
             class="hover:text-green-400 transition"
@@ -45,7 +45,7 @@
             <Icon name="mdi:github" size="28" />
           </NuxtLink>
           <NuxtLink
-            to="https://linkedin.com/in/tonprofil"
+            to="https://www.linkedin.com/in/dylan-bouraoui-942039259"
             target="_blank"
             aria-label="LinkedIn"
             class="hover:text-green-400 transition"

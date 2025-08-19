@@ -28,7 +28,7 @@
           <UButton
             size="lg"
             variant="ghost"
-            class="border border-white/40 hover:bg-white/10 dark:border-gray-600 dark:hover:bg-gray-700 cursor-pointer"
+            class="border border-gray-900 hover:bg-white/10 dark:border-gray-400 dark:hover:bg-gray-700 cursor-pointer"
           >
             {{ $t('home.contact_me') }}
           </UButton>

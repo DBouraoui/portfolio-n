@@ -1,37 +1,164 @@
 [
   {
-    "title": "Mon Projet A",
-    "subTitle": "Projet a destination de créer un eapplication mobile.",
-    "description": "Ce projet consiste à créer une application mobile pour gérer des tâches.",
-    "tags": ["Web", "Nuxt", "Frontend"],
-    "technologies": ["Nuxt 3", "TypeScript", "TailwindCSS"],
-    "creationDate": "2025-08-18",
-    "timeToDev": "3 semaines",
-    "caliopiSkills": ["Gestion de projet", "Analyse des besoins", "Développement Frontend"],
+    "title": "My Event",
+    "subTitle": "Application web pour créer et rejoindre des événements via OAuth2.",
+    "description": "My Event permet aux utilisateurs de créer, rejoindre et visualiser des événements proches de leur localisation. L'inscription et la connexion se font uniquement via Google ou GitHub. Les événements sont affichés sur une carte et la validation des données est gérée avec Zod.",
+    "tags": ["Web", "Next.js", "Frontend", "Backend", "Event Management"],
+    "technologies": ["Next.js", "Prisma", "TailwindCSS", "Zod", "MySQL"],
+    "creationDate": "24-04-2025",
+    "timeToDev": "4 semaines",
+    "caliopiSkills": ["Gestion de projet", "Développement Backend", "Développement Frontend", "Intégration OAuth2", "Gestion de base de données"],
     "links": {
-      "github": "https://github.com/monusername/projet-a",
-      "live": "https://monprojet-a.com"
+      "github": "https://github.com/DBouraoui/my-event",
+      "live": null
     },
     "images": {
-      "card": "/head.png",
-      "carousel": ["/head.png", "/head.png", "/head.png"]
+      "card": "img/my-event-1.png",
+      "carousel": [
+        "img/my-event-1.png",
+        "img/my-event-2.png",
+        "img/my-event-3.png",
+        "img/my-event-4.png"
+      ]
     }
   },
   {
-    "title": "Mon Projet B",
-    "subTitle": "Projet a destination de créer une application web.",
-    "description": "Ce projet consiste à créer une application web pour gérer des tâches.",
-    "tags": ["Web", "Nuxt", "Frontend"],
-    "technologies": ["Nuxt 3", "TypeScript", "TailwindCSS"],
-    "creationDate": "2025-08-18",
-    "timeToDev": "3 semaines",
-    "caliopiSkills": ["Gestion de projet", "Analyse des besoins", "Développement Frontend"],
+    "title": "Driving School",
+    "subTitle": "Application interne de gestion pour une auto-école.",
+    "description": "Ce projet est une application interne développée avec Django, permettant de gérer les élèves, les moniteurs et les administrateurs d'une auto-école. Les élèves peuvent accéder à un code en ligne, réserver des leçons de conduite avec leur moniteur attitré, et suivre leur progression. Les moniteurs peuvent ajouter de nouveaux élèves, valider les leçons, tandis que les administrateurs gèrent l'ensemble de la plateforme, créent des cours de code et supervisent l'organisation.",
+    "tags": ["Web", "Django", "Backend"],
+    "technologies": ["Python", "Django", "HTML", "Tawilwind", "SQLite"],
+    "creationDate": "05-05-2025",
+    "timeToDev": "4 semaines",
+    "caliopiSkills": [
+      "Développement Backend",
+      "Gestion des rôles et permissions",
+      "Analyse des besoins",
+      "Gestion de projet",
+      "Templating Frontend"
+    ],
     "links": {
-      "github": "https://github.com/monusername/projet-a"
+      "github": "https://github.com/DBouraoui/driving-school",
+      "live": null
     },
     "images": {
-      "card": "/head.png",
-      "carousel": ["/head.png"]
+      "card": "img/driving-school-1.png",
+      "carousel": [
+        "img/driving-school-1.png",
+        "img/driving-school-2.png",
+        "img/driving-school-3.png",
+        "img/driving-school-4.png"
+      ]
+    }
+  },
+  {
+    "title": "Beta series",
+    "subTitle": "Application web pour suivre et partager ses séries TV avec ses amis.",
+    "description": "Beta series permet aux utilisateurs de connecter leur compte BetaSeries pour suivre les séries qu'ils regardent et partager leur progression avec leurs amis. L'interface est entièrement réalisée en Vue.js et TailwindCSS.",
+    "tags": ["Web", "Vue.js", "Frontend", "API Integration", "Series Tracking"],
+    "technologies": ["Vue.js 3", "TailwindCSS", "Axios", "BetaSeries API"],
+    "creationDate": "14-07-2024",
+    "timeToDev": "3 semaines",
+    "caliopiSkills": ["Développement Frontend", "Intégration API", "Gestion des utilisateurs"],
+    "links": {
+      "github": "https://github.com/DBouraoui/beta-series"
+    },
+    "images": {
+      "card": "img/beta-series-1.png",
+      "carousel": ["img/beta-series-1.png"]
+    }
+  },
+  {
+    "title": "Chat-IRC",
+    "subTitle": "Application de chat en temps réel inspirée de Slack et Discord",
+    "description": "Chat-IRC permet de créer et rejoindre des channels, envoyer des messages privés, modérer des channels et interagir en direct grâce à Socket.io. Le front est en React avec TailwindCSS et le back en Node.js avec Sequelize et SQLite3.",
+    "tags": ["Web", "React", "Realtime", "Chat"],
+    "technologies": ["React", "Node.js", "Socket.io", "Sequelize", "SQLite3", "TailwindCSS"],
+    "creationDate": "02-07-2024",
+    "timeToDev": "2 semaines",
+    "caliopiSkills": ["Gestion de projet", "Développement Frontend", "Développement Backend", "Realtime Communication", "Base de données"],
+    "links": {
+      "github": "https://github.com/monusername/chat-irc",
+      "live": "https://monchatirc.com"
+    },
+    "images": {
+      "card": "img/chat-irc-1.png",
+      "carousel": ["img/chat-irc-1.png","img/chat-irc-2.png","img/chat-irc-3.png"]
+    }
+  },
+  {
+    "title": "PhaserJs - Jeu 2D Recherche d’Alternance",
+    "subTitle": "Un jeu vidéo en 2D gamifiant la recherche d’alternance",
+    "description": "Projet réalisé avec Phaser.js pour créer un jeu vidéo en 2D sur le thème de la recherche d’alternance. Le joueur peut choisir entre 3 personnages aux compétences différentes, traverser plusieurs scènes avec dialogues et combats d’entretien, affronter des recruteurs PNJ posant des questions techniques, et vivre différentes fins selon ses choix et réussites. Le jeu inclut une bande-son immersive, des dialogues scénarisés, ainsi qu’un système de fins multiples allant de l’échec (endgame si trop d’entretiens échoués) à la réussite (happy end avec signature d’un contrat).",
+    "tags": ["Jeu Vidéo", "Phaser.js", "JavaScript"],
+    "technologies": ["Phaser.js", "JavaScript ES6", "HTML5 Canvas", "CSS"],
+    "creationDate": "10-04-2024",
+    "timeToDev": "2 semaines",
+    "caliopiSkills": [
+      "Conception de jeu",
+      "Programmation JavaScript",
+      "Gestion de scènes et interactions",
+      "Gamification",
+      "Gestion de dialogues et choix multiples",
+      "Intégration audio"
+    ],
+    "links": {
+      "github": "https://github.com/DBouraoui/phaser-js",
+      "live": "https://webac-jsf-display.vercel.app/dylan"
+    },
+    "images": {
+      "card": "img/phaser-1.png",
+      "carousel": [
+        "img/phaser-1.png",
+        "img/phaser-2.png",
+        "img/phaser-3.jpeg",
+        "img/phaser-4.jpeg",
+        "img/phaser-5.jpeg"
+      ]
+    }
+  },
+  {
+    "title": "Mon Portfolio",
+    "subTitle": "Un portfolio moderne réalisé avec Nuxt.js et TailwindCSS",
+    "description": "Ce projet est mon portfolio personnel, développé avec Nuxt.js, TailwindCSS et NuxtUI pour certains composants. Il permet de présenter mes projets, mes compétences et mon parcours de manière claire et moderne, avec une interface responsive et élégante. L'objectif est de mettre en valeur mon travail en tant que développeur full-stack, tout en offrant une navigation fluide et intuitive.",
+    "tags": ["Web", "Nuxt", "Frontend"],
+    "technologies": ["Nuxt 3", "Vue 3", "TailwindCSS", "NuxtUI"],
+    "creationDate": "19-08-2025",
+    "timeToDev": "3 semaines",
+    "caliopiSkills": [
+      "Conception UI/UX",
+      "Développement Frontend",
+      "Intégration TailwindCSS",
+      "Utilisation de composants NuxtUI"
+    ],
+    "links": {
+      "github": "https://github.com/DBouraoui/portfolio-n",
+      "live": null
+    },
+    "images": {
+      "card": "img/portfolio-1.png",
+      "carousel": [
+        "img/portfolio-1.png",
+        "img/portfolio-2.png"
+      ]
+    }
+  },
+  {
+    "title": "Reborn Slayer",
+    "subTitle": "Un jeu vidéo 3D immersif réalisé avec Ruby on Rails et Three.js",
+    "description": "Reborn Slayer est un jeu vidéo en 3D où le joueur choisit un personnage pour vivre une aventure remplie de quêtes, de combats contre PNJ et créatures, et de gestion de ressources. Le jeu propose un inventaire complet, une monnaie virtuelle et une boutique pour acheter des objets. Développé avec Ruby on Rails pour la logique métier et Three.js pour l’univers en 3D, il offre une expérience interactive et immersive.",
+    "tags": ["Jeu vidéo", "3D", "Rails", "Three.js"],
+    "technologies": ["Ruby on Rails", "Three.js", "MYSQL8.0"],
+    "creationDate": "10-02-2025",
+    "timeToDev": "4 semaines",
+    "caliopiSkills": ["Développement Back-end", "Programmation 3D", "Gestion de base de données", "Conception d'interface interactive"],
+    "links": {
+      "github": "https://github.com/DBouraoui/rebornSlayer",
+      "live": null
+    },
+    "images": {
+      "card": "/reborn-slayer-card.png",
+      "carousel": ["/reborn-slayer-1.png", "/reborn-slayer-2.png", "/reborn-slayer-3.png"]
     }
   }
 ]
