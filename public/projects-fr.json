@@ -7,7 +7,13 @@
     "technologies": ["Next.js", "Prisma", "TailwindCSS", "Zod", "MySQL"],
     "creationDate": "24-04-2025",
     "timeToDev": "4 semaines",
-    "caliopiSkills": ["Gestion de projet", "Développement Backend", "Développement Frontend", "Intégration OAuth2", "Gestion de base de données"],
+    "caliopiSkills": [
+      "Gestion de projet",
+      "Développement Backend",
+      "Développement Frontend",
+      "Intégration OAuth2",
+      "Gestion de base de données"
+    ],
     "links": {
       "github": "https://github.com/DBouraoui/my-event",
       "live": null
@@ -76,14 +82,20 @@
     "technologies": ["React", "Node.js", "Socket.io", "Sequelize", "SQLite3", "TailwindCSS"],
     "creationDate": "02-07-2024",
     "timeToDev": "2 semaines",
-    "caliopiSkills": ["Gestion de projet", "Développement Frontend", "Développement Backend", "Realtime Communication", "Base de données"],
+    "caliopiSkills": [
+      "Gestion de projet",
+      "Développement Frontend",
+      "Développement Backend",
+      "Realtime Communication",
+      "Base de données"
+    ],
     "links": {
       "github": "https://github.com/DBouraoui/chat-irc",
       "live": "https://monchatirc.com"
     },
     "images": {
       "card": "img/chat-irc-1.png",
-      "carousel": ["img/chat-irc-1.png","img/chat-irc-2.png","img/chat-irc-3.png"]
+      "carousel": ["img/chat-irc-1.png", "img/chat-irc-2.png", "img/chat-irc-3.png"]
     }
   },
   {
@@ -137,10 +149,7 @@
     },
     "images": {
       "card": "img/portfolio-1.png",
-      "carousel": [
-        "img/portfolio-1.png",
-        "img/portfolio-2.png"
-      ]
+      "carousel": ["img/portfolio-1.png", "img/portfolio-2.png"]
     }
   },
   {
@@ -151,7 +160,12 @@
     "technologies": ["Ruby on Rails", "Three.js", "MYSQL8.0"],
     "creationDate": "05-05-2025",
     "timeToDev": "4 semaines",
-    "caliopiSkills": ["Développement Back-end", "Programmation 3D", "Gestion de base de données", "Conception d'interface interactive"],
+    "caliopiSkills": [
+      "Développement Back-end",
+      "Programmation 3D",
+      "Gestion de base de données",
+      "Conception d'interface interactive"
+    ],
     "links": {
       "github": "https://github.com/DBouraoui/rebornSlayer",
       "live": null
@@ -177,7 +191,12 @@
     "technologies": ["Symfony", "Twig", "TailwindCSS", "MySQL", "VPS"],
     "creationDate": "07-03-2025",
     "timeToDev": "2 semaines",
-    "caliopiSkills": ["Développement Back-end", "Intégration Frontend", "Administration de serveur", "Conception UI/UX"],
+    "caliopiSkills": [
+      "Développement Back-end",
+      "Intégration Frontend",
+      "Administration de serveur",
+      "Conception UI/UX"
+    ],
     "links": {
       "github": "https://github.com/DBouraoui/leCamionDuChef#",
       "live": "https://lecamionduchef.fr/"
@@ -226,9 +245,7 @@
     },
     "images": {
       "card": "img/symfony.png",
-      "carousel": [
-      "img/symfony.png"
-      ]
+      "carousel": ["img/symfony.png"]
     }
   },
   {

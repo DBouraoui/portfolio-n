@@ -12,9 +12,51 @@
         </p>
       </div>
 
+      <div
+        class="mb-12 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+      >
+        <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+          <!-- Filtre par type/tag -->
+          <div class="flex flex-wrap gap-3">
+            <UButton
+              :variant="selectedTag === 'all' ? 'solid' : 'soft'"
+              :color="selectedTag === 'all' ? 'primary' : 'gray'"
+              size="sm"
+              @click="selectedTag = 'all'"
+              class="transition-all duration-200"
+            >
+              Tous les projets ({{ projects.length }})
+            </UButton>
+            <UButton
+              v-for="tag in uniqueTags"
+              :key="tag"
+              :variant="selectedTag === tag ? 'solid' : 'soft'"
+              :color="selectedTag === tag ? 'primary' : 'gray'"
+              size="sm"
+              @click="selectedTag = tag"
+              class="transition-all duration-200"
+            >
+              {{ tag }} ({{ getProjectCountByTag(tag) }})
+            </UButton>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compteur de résultats -->
+      <div class="mb-8 text-center">
+        <p class="text-gray-600 dark:text-gray-400">
+          <span class="font-semibold text-primary-600 dark:text-primary-400">{{
+            filteredProjects.length
+          }}</span>
+          projet{{ filteredProjects.length > 1 ? 's' : '' }}
+          {{ selectedTag !== 'all' ? 'correspondant aux filtres' : 'au total' }}
+        </p>
+      </div>
+
+      <!-- Grid des projets -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          v-for="(project, index) in projects"
+          v-for="(project, index) in filteredProjects"
           :key="index"
           class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200/50 dark:border-gray-700/50 hover:scale-[1.02]"
         >
@@ -228,12 +270,23 @@
           </div>
         </div>
       </div>
+
+      <div v-if="filteredProjects.length === 0" class="text-center py-12">
+        <UIcon name="i-heroicons-folder-open" class="text-6xl text-gray-400 mb-4" />
+        <h3 class="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">
+          Aucun projet trouvé
+        </h3>
+        <p class="text-gray-500 dark:text-gray-500 mb-4">
+          Essayez de modifier vos filtres pour voir plus de projets
+        </p>
+        <UButton variant="soft" @click="resetFilters()"> Réinitialiser les filtres </UButton>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 
@@ -251,8 +304,8 @@ interface Project {
 }
 
 const projects = ref<Project[]>([])
+const selectedTag = ref<string>('all')
 
-// Fonction pour charger le JSON selon la langue
 const loadProjects = async (lang: string) => {
   try {
     const res = await fetch(`/projects-${lang}.json`)
@@ -262,12 +315,35 @@ const loadProjects = async (lang: string) => {
   }
 }
 
+const uniqueTags = computed(() => {
+  const tags = projects.value.flatMap((project) => project.tags)
+  return [...new Set(tags)].sort()
+})
+
+const filteredProjects = computed(() => {
+  let filtered = projects.value
+
+  if (selectedTag.value !== 'all') {
+    filtered = filtered.filter((project) => project.tags.includes(selectedTag.value))
+  }
+
+  return filtered
+})
+
+const getProjectCountByTag = (tag: string) => {
+  return projects.value.filter((project) => project.tags.includes(tag)).length
+}
+
+const resetFilters = () => {
+  selectedTag.value = 'all'
+}
+
 onMounted(() => {
   loadProjects(locale.value)
 })
 
 watch(locale, (newLocale) => {
   loadProjects(newLocale)
+  resetFilters()
 })
-
 </script>
