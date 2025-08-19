@@ -234,6 +234,8 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale } = useI18n()
 
 interface Project {
   title: string
@@ -250,12 +252,22 @@ interface Project {
 
 const projects = ref<Project[]>([])
 
-onMounted(async () => {
+// Fonction pour charger le JSON selon la langue
+const loadProjects = async (lang: string) => {
   try {
-    const res = await fetch('/projects.json')
+    const res = await fetch(`/projects-${lang}.json`)
     projects.value = await res.json()
   } catch (error) {
     console.error('Erreur lors du chargement des projets:', error)
   }
+}
+
+onMounted(() => {
+  loadProjects(locale.value)
 })
+
+watch(locale, (newLocale) => {
+  loadProjects(newLocale)
+})
+
 </script>
