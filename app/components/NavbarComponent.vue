@@ -72,7 +72,7 @@ const menuItems = [
                       :name="item.icon"
                       class="w-5 h-5 text-gray-400 dark:text-white/60 group-hover:text-green-500 dark:group-hover:text-green-400 transition-colors"
                     />
-                    <span>{{ item.label }}</span>
+                    <span>{{ $t(item.label) }}</span>
                   </NuxtLink>
                 </li>
               </ul>
