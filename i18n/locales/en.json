@@ -60,7 +60,7 @@
     "description": "{'My web development training path at Web@cadémie Epitech.'}",
     "items": {
       "0": {
-        "date": "13 Nov 2023",
+        "date": "13 Nov 2023 - 23 Sep 2024",
         "title": "{'Start at Web@cadémie - Epitech'}",
         "subtitle": "Intensive web development training",
         "description": "Comprehensive full-stack web development training",
@@ -72,7 +72,7 @@
         }
       },
       "1": {
-        "date": "23 Sep 2024",
+        "date": "23 Sep 2024 - 14 Nov 2025",
         "title": "{'Work-Study at Web@cadémie'}",
         "subtitle": "Company/school rhythm",
         "description": "14 months of work-study - 3 weeks company / 1 week school",
@@ -84,7 +84,7 @@
         }
       },
       "2": {
-        "date": "January 5, 2026 - June 20, 2026",
+        "date": "5 Jan 2026 - 20 Jun 2026",
         "title": "DevOps Engineer & Cloud Architect",
         "subtitle": "Advanced specialization in infrastructure and cloud",
         "description": "Develop and enhance my skills in DevOps and cloud architecture to strengthen my expertise and prepare for large-scale projects.",
