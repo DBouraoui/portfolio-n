@@ -4,4 +4,5 @@
   <SkillSection />
   <Timeline />
   <ProjectCard />
+  <Contact />
 </template>

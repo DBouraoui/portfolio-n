@@ -9,7 +9,8 @@
     "reseau": "Réseaux",
     "and": "et",
     "about": "A propos",
-    "graduation": "Formation"
+    "graduation": "Formation",
+    "email": "{'contact@dbouraoui.fr'}"
   },
 
   "home": {
@@ -35,8 +36,24 @@
     "interface": "Interface utilisateur",
     "api": "Serveur & API",
     "devops": " DevOps & Base de données",
-    "tools": "Outils"
+    "tools": "Outils",
+    "fullstack": "Étant développeur fullstack, j'ai expérimenté plusieurs domaines tels que le frontend, le backend et même un peu de motion design.",
+    "preferencesIntro": "Ayant réalisé plusieurs projets avec différentes technologies, ma préférence se tourne davantage vers :",
+    "preferences": {
+      "api": "La création d'API scalables et performantes",
+      "architecture": "L'architecture logicielle et les bonnes pratiques de développement",
+      "servers": "La gestion de serveurs et d'infrastructures",
+      "project": "La gestion globale de projets (de la conception à la mise en production)"
+    },
+    "interest": "Mon intérêt se porte particulièrement sur le DevOps et le DevSecOps, des domaines qui me passionnent.",
+    "ambitionIntro": "Mon ambition est de continuer à me spécialiser dans le cloud pour :",
+    "ambitions": {
+      "architecture": "Améliorer mes compétences en architecture cloud",
+      "tools": "Découvrir de nouveaux outils et technologies",
+      "solutions": "Concevoir des solutions adaptées aux projets de toutes tailles"
+    }
   },
+
 
   "timeline": {
     "title": "Formation",
@@ -70,5 +87,33 @@
   "projects": {
     "title": "Mes Projets",
     "description": "Découvrez mes réalisations et projets développés durant ma formation."
+  },
+
+  "contact": {
+    "title": "Entrez en contact",
+    "subtitle": "Pour toute question ou collaboration, n'hésitez pas à me contacter. Je réponds généralement sous 24h.",
+    "info": "Mes coordonnées",
+    "location": "Toulon, France",
+    "social": "Mes réseaux",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "message": "Votre message...",
+      "send": "Envoyer le message",
+      "success": "Votre message a été envoyé avec succès !",
+      "error": "Une erreur est survenue lors de l'envoi",
+      "required": {
+        "name": "Le nom est obligatoire",
+        "email": "L'email est obligatoire",
+        "message": "Le message est obligatoire",
+        "valid_email": "Veuillez entrer un email valide"
+      }
+    }
+  },
+  "social_labels": {
+    "website": "Visiter mon site web",
+    "github": "Mon profil GitHub",
+    "instagram": "Mon profil Instagram",
+    "twitter": "Mon profil Twitter"
   }
 }

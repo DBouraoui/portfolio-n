@@ -9,7 +9,8 @@
     "reseau": "Networks",
     "and": "and",
     "about": "About",
-    "graduation": "Education"
+    "graduation": "Education",
+    "email": "{'contact@dbouraoui.fr'}"
   },
 
   "home": {
@@ -35,7 +36,22 @@
     "interface": "User Interface",
     "api": "Server & API",
     "devops": "DevOps & Database",
-    "tools": "Tools"
+    "tools": "Tools",
+    "fullstack": "As a fullstack developer, I have gained experience in several areas such as frontend, backend, and even some motion design.",
+    "preferencesIntro": "Having worked on several projects with different technologies, my preference leans more towards:",
+    "preferences": {
+      "api": "Building scalable and high-performance APIs",
+      "architecture": "Software architecture and development best practices",
+      "servers": "Managing servers and infrastructures",
+      "project": "Overseeing projects globally (from design to production)"
+    },
+    "interest": "My interest is particularly focused on DevOps and DevSecOps, fields that truly inspire me.",
+    "ambitionIntro": "My ambition is to continue specializing in the cloud to:",
+    "ambitions": {
+      "architecture": "Improve my skills in cloud architecture",
+      "tools": "Explore new tools and technologies",
+      "solutions": "Design solutions adapted to projects of all sizes"
+    }
   },
 
   "timeline": {
@@ -70,5 +86,33 @@
   "projects": {
     "title": "My Projects",
     "description": "Discover my achievements and projects developed during my training."
+  },
+
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "For any questions or collaboration opportunities, feel free to contact me. I typically respond within 24 hours.",
+    "info": "Contact details",
+    "location": "Paris, France",
+    "social": "My social networks",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Your message...",
+      "send": "Send message",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred while sending your message",
+      "required": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "message": "Message is required",
+        "valid_email": "Please enter a valid email address"
+      }
+    }
+  },
+  "social_labels": {
+    "website": "Visit my website",
+    "github": "My GitHub profile",
+    "instagram": "My Instagram profile",
+    "twitter": "My Twitter profile"
   }
 }

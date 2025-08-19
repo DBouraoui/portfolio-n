@@ -9,7 +9,7 @@ const skills = {
 <template>
   <section
     id="skills"
-    class="min-h-screen flex flex-col items-center justify-center text-gray-900 dark:text-gray-100"
+    class="min-h-screen flex py-24 flex-col items-center justify-center text-gray-900 dark:text-gray-100"
   >
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-20">
@@ -88,5 +88,42 @@ const skills = {
         </div>
       </div>
     </div>
+    <div class="max-w-4xl mx-auto mt-16 space-y-10">
+
+      <div class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800">
+        <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
+          {{ $t('skills.fullstack') }}
+        </p>
+
+        <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
+          {{ $t('skills.preferencesIntro') }}
+        </p>
+
+        <ul class="list-disc pl-6 space-y-3 marker:text-green-500 text-gray-700 dark:text-gray-300">
+          <li>{{ $t('skills.preferences.api') }}</li>
+          <li>{{ $t('skills.preferences.architecture') }}</li>
+          <li>{{ $t('skills.preferences.servers') }}</li>
+          <li>{{ $t('skills.preferences.project') }}</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-gray-900/50 rounded-2xl p-8 shadow-sm border border-gray-200 dark:border-gray-800">
+        <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
+          {{ $t('skills.interest') }}
+        </p>
+
+        <p class="text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300 mb-6">
+          {{ $t('skills.ambitionIntro') }}
+        </p>
+
+        <ul class="list-disc pl-6 space-y-3 marker:text-green-500 text-gray-700 dark:text-gray-300">
+          <li>{{ $t('skills.ambitions.architecture') }}</li>
+          <li>{{ $t('skills.ambitions.tools') }}</li>
+          <li>{{ $t('skills.ambitions.solutions') }}</li>
+        </ul>
+      </div>
+
+    </div>
+
   </section>
 </template>
