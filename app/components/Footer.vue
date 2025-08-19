@@ -60,6 +60,16 @@
             aria-label="GitHub"
             class="hover:text-green-400 transition"
           >
+            <p>Perso</p>
+            <Icon name="mdi:github" size="28" />
+          </NuxtLink>
+          <NuxtLink
+              to="https://github.com/dylanepitech"
+              target="_blank"
+              aria-label="GitHub"
+              class="hover:text-green-400 transition"
+          >
+            <p>Etudiant</p>
             <Icon name="mdi:github" size="28" />
           </NuxtLink>
           <NuxtLink
@@ -80,4 +90,5 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
