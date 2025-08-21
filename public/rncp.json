@@ -1,0 +1,124 @@
+{
+  "skills": [
+    {
+      "id": "RNCP01-1",
+      "code": "RNCP38436BC01",
+      "description": "Rédiger un Cahier Des Charges (CDC) en partant d'une expression de besoins, afin de cadrer fonctionnellement un projet de solution web dans le respect des réglementations en vigueur et notamment le RGPD",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP01-2",
+      "code": "RNCP38436BC01",
+      "description": "Rédiger des spécifications techniques en analysant un CDC, afin de cadrer techniquement un projet de développement de solution web",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP01-3",
+      "code": "RNCP38436BC01",
+      "description": "Déployer un environnement de travail en mettant en place les outils de versionnage, de partage et de collaboration/communication nécessaires, afin de cadrer opérationnellement un projet de développement de solution web",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP01-4",
+      "code": "RNCP38436BC01",
+      "description": "Réaliser une maquette afin de permettre au client de valider la structure de la solution web en respectant les bonnes pratiques en termes d'ergonomie et d'accessibilité",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP01-5",
+      "code": "RNCP38436BC01",
+      "description": "Identifier les fonctionnalités à développer, en modélisant les divers éléments et leurs interconnexions, afin de structurer l'architecture de la solution web et de Base De Données (BDD)",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP01-6",
+      "code": "RNCP38436BC01",
+      "description": "Rédiger une présentation pour présenter les choix techniques, les maquettes, et le schéma de la solution web en argumentant les choix faits afin de permettre au client ou au décideur de valider la proposition de solution",
+      "bloc": "RNCP38436BC01"
+    },
+    {
+      "id": "RNCP02-1",
+      "code": "RNCP38436BC02",
+      "description": "Développer le prototype de la solution web afin de présenter l'architecture technique au client",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-2",
+      "code": "RNCP38436BC02",
+      "description": "Rédiger le code de la solution en transcrivant les fonctionnalités du CDC, en respectant les normes d'accessibilité, d'ergonomie, de référencement, et la réglementation en vigueur afin de développer la solution web",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-3",
+      "code": "RNCP38436BC02",
+      "description": "Intégrer les différents éléments de la solution web en fonction des maquettes, en respectant les dernières normes des langages utilisés (HTML, CSS, JS, …)",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-4",
+      "code": "RNCP38436BC02",
+      "description": "Implémenter la partie \"front-end\" d'une solution web",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-5",
+      "code": "RNCP38436BC02",
+      "description": "Implémenter la logique et la base de données assurant la persistance des données côté serveur (le \"back-end\")",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-6",
+      "code": "RNCP38436BC02",
+      "description": "Implémenter des règles d'authentification, en respectant les bonnes pratiques en matière de sécurité, afin de sécuriser l'accès à une solution web",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-7",
+      "code": "RNCP38436BC02",
+      "description": "Implémenter un plan de tests en concevant les différents tests unitaires et d'intégration afin de vérifier que l'ensemble des fonctionnalités développées fonctionne bien séparément et à l'unisson",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP02-8",
+      "code": "RNCP38436BC02",
+      "description": "Déployer une application web en utilisant un serveur afin de rendre l'application accessible aux utilisateurs",
+      "bloc": "RNCP38436BC02"
+    },
+    {
+      "id": "RNCP03-1",
+      "code": "RNCP38436BC03",
+      "description": "Rédiger une documentation technique à destination des équipes parties prenantes en réalisant la documentation technique et fonctionnelle de la solution web, afin de garantir sa pérennité et son évolution future",
+      "bloc": "RNCP38436BC03"
+    },
+    {
+      "id": "RNCP03-2",
+      "code": "RNCP38436BC03",
+      "description": "Rédiger une documentation utilisateur pour apporter un support aux utilisateurs, afin de garantir l'autonomie et la satisfaction des utilisateurs de la solution web",
+      "bloc": "RNCP38436BC03"
+    },
+    {
+      "id": "RNCP03-3",
+      "code": "RNCP38436BC03",
+      "description": "Monitorer le lancement d'une solution web, en recueillant les retours utilisateurs, afin d'évaluer la qualité de la solution web déployée",
+      "bloc": "RNCP38436BC03"
+    },
+    {
+      "id": "RNCP03-4",
+      "code": "RNCP38436BC03",
+      "description": "Identifier des améliorations qualitatives et de performance d'une solution web, en analysant les retours utilisateurs et les données d'analyse du trafic, afin d'améliorer la qualité et la disponibilité d'une solution web déployée",
+      "bloc": "RNCP38436BC03"
+    },
+    {
+      "id": "RNCP03-5",
+      "code": "RNCP38436BC03",
+      "description": "Analyser la qualité de l'ergonomie et la qualité de l'accessibilité de la solution (normes, design, ergonomie, navigation, référencement, bonnes pratiques, etc.) pour identifier les axes d'amélioration",
+      "bloc": "RNCP38436BC03"
+    },
+    {
+      "id": "RNCP03-6",
+      "code": "RNCP38436BC03",
+      "description": "Rédiger un document argumentatif en listant des propositions d'améliorations afin de faire valider des préconisations de développements correctifs d'une solution web",
+      "bloc": "RNCP38436BC03"
+    }
+  ]
+}

@@ -2,17 +2,48 @@
   {
     "title": "My Event",
     "subTitle": "Web application to create and join events via OAuth2.",
-    "description": "My Event allows users to create, join and view events near their location. Registration and login are done exclusively via Google or GitHub. Events are displayed on a map and data validation is handled with Zod.",
-    "tags": ["Web", "Next.js", "Frontend", "Backend", "Event Management"],
+    "description": "My Event allows users to create, join and visualize events near their location. Registration and login are only possible via Google or GitHub. Events are displayed on a map and data validation is handled with Zod.",
+    "tags": ["Web", "Next.js", "MySQL"],
     "technologies": ["Next.js", "Prisma", "TailwindCSS", "Zod", "MySQL"],
     "creationDate": "24-04-2025",
     "timeToDev": "4 weeks",
     "caliopiSkills": [
-      "Project Management",
-      "Backend Development",
-      "Frontend Development",
-      "OAuth2 Integration",
-      "Database Management"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (mapping interface)"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Next.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules (OAuth Google/GitHub)"
+      },
+      {
+        "id": "RNCP02-8",
+        "description": "Deploy the application"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/my-event",
@@ -31,17 +62,40 @@
   {
     "title": "Driving School",
     "subTitle": "Internal management application for a driving school.",
-    "description": "This project is an internal application developed with Django, allowing management of students, instructors and administrators of a driving school. Students can access an online code, book driving lessons with their assigned instructor, and track their progress. Instructors can add new students, validate lessons, while administrators manage the entire platform, create code courses and supervise the organization.",
-    "tags": ["Web", "Django", "Backend"],
-    "technologies": ["Python", "Django", "HTML", "TailwindCSS", "SQLite"],
+    "description": "This project is an internal application developed with Django, allowing to manage students, instructors and administrators of a driving school.",
+    "tags": ["Web", "Django", "MySQL"],
+    "technologies": ["Python", "Django", "HTML", "Tawilwind", "SQLite"],
     "creationDate": "05-05-2025",
     "timeToDev": "4 weeks",
     "caliopiSkills": [
-      "Backend Development",
-      "Role and Permission Management",
-      "Requirements Analysis",
-      "Project Management",
-      "Frontend Templating"
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop (role management)"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Django)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/driving-school",
@@ -58,14 +112,39 @@
     }
   },
   {
-    "title": "Beta Series",
-    "subTitle": "Web application to track and share your TV series with friends.",
-    "description": "Beta Series allows users to connect their BetaSeries account to track the series they watch and share their progress with friends. The interface is entirely built with Vue.js and TailwindCSS.",
-    "tags": ["Web", "Vue.js", "Frontend", "API Integration", "Series Tracking"],
+    "title": "Beta series",
+    "subTitle": "Web application to track and share TV shows with friends.",
+    "description": "Beta series allows users to connect their BetaSeries account to track the shows they watch and share their progress with friends.",
+    "tags": ["Web", "Vue.js"],
     "technologies": ["Vue.js 3", "TailwindCSS", "Axios", "BetaSeries API"],
     "creationDate": "14-07-2024",
     "timeToDev": "3 weeks",
-    "caliopiSkills": ["Frontend Development", "API Integration", "User Management"],
+    "caliopiSkills": [
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Vue.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules (BetaSeries login)"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation"
+      }
+    ],
     "links": {
       "github": "https://github.com/DBouraoui/beta-series"
     },
@@ -77,17 +156,48 @@
   {
     "title": "Chat-IRC",
     "subTitle": "Real-time chat application inspired by Slack and Discord",
-    "description": "Chat-IRC allows creating and joining channels, sending private messages, moderating channels and interacting live thanks to Socket.io. The front-end is in React with TailwindCSS and the back-end in Node.js with Sequelize and SQLite3.",
-    "tags": ["Web", "React", "Realtime", "Chat"],
+    "description": "Chat-IRC allows creating and joining channels, sending private messages, moderating channels and interacting in real-time thanks to Socket.io.",
+    "tags": ["Web", "React", "Node.js"],
     "technologies": ["React", "Node.js", "Socket.io", "Sequelize", "SQLite3", "TailwindCSS"],
     "creationDate": "02-07-2024",
     "timeToDev": "2 weeks",
     "caliopiSkills": [
-      "Project Management",
-      "Frontend Development",
-      "Backend Development",
-      "Realtime Communication",
-      "Database"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (chat interface)"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (React + Node.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end (React)"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic (Node.js)"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules"
+      },
+      {
+        "id": "RNCP02-7",
+        "description": "Implement a testing plan (Socket.io connection tests)"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/chat-irc",
@@ -99,20 +209,42 @@
     }
   },
   {
-    "title": "PhaserJs - 2D Internship Search Game",
-    "subTitle": "A 2D video game gamifying the search for an internship",
-    "description": "Project created with Phaser.js to develop a 2D video game on the theme of internship search. The player can choose between 3 characters with different skills, go through several scenes with dialogues and interview battles, face recruiter NPCs asking technical questions, and experience different endings based on their choices and successes. The game includes an immersive soundtrack, scripted dialogues, as well as a multiple endings system ranging from failure (endgame if too many interviews fail) to success (happy ending with contract signing).",
-    "tags": ["Video Game", "Phaser.js", "JavaScript"],
+    "title": "PhaserJs - 2D Game Job Search",
+    "subTitle": "A 2D video game gamifying the job search process",
+    "description": "Project developed with Phaser.js to create a 2D video game on the theme of job search.",
+    "tags": ["Video Game", "Phaser.js"],
     "technologies": ["Phaser.js", "JavaScript ES6", "HTML5 Canvas", "CSS"],
     "creationDate": "10-04-2024",
     "timeToDev": "2 weeks",
     "caliopiSkills": [
-      "Game Design",
-      "JavaScript Programming",
-      "Scene and Interaction Management",
-      "Gamification",
-      "Dialogue and Multiple Choice Management",
-      "Audio Integration"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (level and character design)"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop (game mechanics)"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Phaser.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components (graphics, sounds)"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end (game interface)"
+      },
+      {
+        "id": "RNCP02-7",
+        "description": "Implement a testing plan (test game mechanics)"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation (game rules)"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/phaser-js",
@@ -131,17 +263,45 @@
   },
   {
     "title": "My Portfolio",
-    "subTitle": "A modern portfolio built with Nuxt.js and TailwindCSS",
-    "description": "This project is my personal portfolio, developed with Nuxt.js, TailwindCSS and NuxtUI for some components. It allows presenting my projects, skills and journey in a clear and modern way, with a responsive and elegant interface. The goal is to showcase my work as a full-stack developer, while offering smooth and intuitive navigation.",
-    "tags": ["Web", "Nuxt", "Frontend"],
+    "subTitle": "A modern portfolio made with Nuxt.js and TailwindCSS",
+    "description": "This project is my personal portfolio, developed with Nuxt.js, TailwindCSS and NuxtUI for some components.",
+    "tags": ["Web", "Vue.js"],
     "technologies": ["Nuxt 3", "Vue 3", "TailwindCSS", "NuxtUI"],
     "creationDate": "19-08-2025",
     "timeToDev": "3 weeks",
     "caliopiSkills": [
-      "UI/UX Design",
-      "Frontend Development",
-      "TailwindCSS Integration",
-      "NuxtUI Component Usage"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (portfolio design)"
+      },
+      {
+        "id": "RNCP01-6",
+        "description": "Write a presentation of technical choices"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Nuxt.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end"
+      },
+      {
+        "id": "RNCP02-8",
+        "description": "Deploy the application"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/portfolio-n",
@@ -154,17 +314,49 @@
   },
   {
     "title": "Reborn Slayer",
-    "subTitle": "An immersive 3D video game built with Ruby on Rails and Three.js",
-    "description": "Reborn Slayer is a 3D video game where the player chooses a character to live an adventure filled with quests, battles against NPCs and creatures, and resource management. The game offers a complete inventory, virtual currency and a shop to buy items. Developed with Ruby on Rails for business logic and Three.js for the 3D universe, it provides an interactive and immersive experience.",
-    "tags": ["Video Game", "3D", "Rails", "Three.js"],
+    "subTitle": "An immersive 3D video game made with Ruby on Rails and Three.js",
+    "description": "Reborn Slayer is a 3D video game where the player chooses a character to live an adventure filled with quests.",
+    "tags": ["Video Game", "Ruby on Rails", "Three.js"],
     "technologies": ["Ruby on Rails", "Three.js", "MYSQL8.0"],
     "creationDate": "05-05-2025",
     "timeToDev": "4 weeks",
     "caliopiSkills": [
-      "Backend Development",
-      "3D Programming",
-      "Database Management",
-      "Interactive Interface Design"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (3D design)"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Ruby on Rails + Three.js)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components (3D models, animations)"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end (Three.js)"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic (Ruby on Rails)"
+      },
+      {
+        "id": "RNCP02-7",
+        "description": "Implement a testing plan"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation (game guide)"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/rebornSlayer",
@@ -186,16 +378,60 @@
   {
     "title": "The Chef's Truck",
     "subTitle": "A showcase website and admin panel for a food truck",
-    "description": "This project is a website built with Symfony using Twig and Tailwind, hosted on a VPS. On the public side, it allows customers to discover the food truck's history, browse the updated menu, view events, opening hours and contact the owner. On the administration side, a complete dashboard allows easy content management: adding and modifying menus, updating schedules, managing opening locations, as well as modifying photos and events. The whole offers a turnkey, modern and responsive solution for a food truck based in the south of France.",
-    "tags": ["Web", "Symfony", "Admin Panel", "Food Truck"],
+    "description": "This project is a website developed with Symfony using Twig and Tailwind, hosted on a VPS. On the public side, it allows customers to discover the food truck's story, view the updated menu, see events, opening hours and contact the owner. On the administration side, a complete dashboard allows easy content management: adding and modifying menus, updating hours, managing opening locations, as well as modifying photos and events.",
+    "tags": ["Web", "Symfony", "MySQL"],
     "technologies": ["Symfony", "Twig", "TailwindCSS", "MySQL", "VPS"],
     "creationDate": "07-03-2025",
     "timeToDev": "2 weeks",
     "caliopiSkills": [
-      "Backend Development",
-      "Frontend Integration",
-      "Server Administration",
-      "UI/UX Design"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup (showcase and admin interface)"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop"
+      },
+      {
+        "id": "RNCP01-6",
+        "description": "Write a presentation of technical choices"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Symfony + Twig)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end (Twig + CSS)"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic (Symfony)"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules (admin access)"
+      },
+      {
+        "id": "RNCP02-8",
+        "description": "Deploy the application on a VPS"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation for the client (food truck) and administrator"
+      },
+      {
+        "id": "RNCP03-3",
+        "description": "Monitor the web solution launch"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/leCamionDuChef#",
@@ -215,8 +451,8 @@
   {
     "title": "Symfony 7.3 REST API Boilerplate",
     "subTitle": "A complete and modern boilerplate to quickly start a secure REST API",
-    "description": "This project is a boilerplate built with Symfony 7.3, designed to create robust, secure and ready-to-use REST APIs. It includes registration, JWT login, email validation, password reset, as well as a rate limiter system to protect against brute force attacks. Email sending is handled asynchronously thanks to Messenger and Mailer. The project follows SOLID best practices, uses EventSubscriber for event logic, and integrates Monolog to trace logs of different actions. The whole is documented and delivered with unit and functional tests, as well as ready-to-use scenarios in BRUNO. The development environment is provided via Docker Compose, including PostgreSQL, Adminer and Caddy with FrankenPHP to replace PHP-FPM (better performance and compatibility with Mercure for future real-time notifications). For production, the boilerplate includes Grafana for monitoring and can be deployed with Docker Swarm (additional configuration required).",
-    "tags": ["API", "Symfony", "Docker", "JWT", "DevOps"],
+    "description": "This project is a boilerplate built with Symfony 7.3, designed to create robust, secure and ready-to-use REST APIs. It includes registration, JWT login, email validation, password reset, as well as a rate limiter system to protect against brute force attacks. Email sending is handled asynchronously thanks to Messenger and Mailer. The project follows SOLID best practices, uses EventSubscriber for event-based logic, and integrates Monolog to trace logs of various actions.",
+    "tags": ["API", "Symfony"],
     "technologies": [
       "Symfony 7.3",
       "API Platform",
@@ -233,11 +469,62 @@
     "creationDate": "06-2025",
     "timeToDev": "3 weeks",
     "caliopiSkills": [
-      "Backend Development",
-      "Application Security",
-      "Unit and Functional Testing",
-      "DevOps and Docker",
-      "Technical Documentation"
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup of the technical architecture"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop (authentication, logs, etc.)"
+      },
+      {
+        "id": "RNCP01-6",
+        "description": "Write a presentation of technical choices (Symfony 7.3, architecture, etc.)"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (Symfony + API Platform)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components (Docker, Caddy, etc.)"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules (JWT)"
+      },
+      {
+        "id": "RNCP02-7",
+        "description": "Implement a testing plan (unit and functional tests)"
+      },
+      {
+        "id": "RNCP02-8",
+        "description": "Deploy the application (Docker configuration)"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write comprehensive technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation for developers"
+      },
+      {
+        "id": "RNCP03-3",
+        "description": "Monitor the solution launch"
+      },
+      {
+        "id": "RNCP03-4",
+        "description": "Identify qualitative and performance improvements"
+      },
+      {
+        "id": "RNCP03-5",
+        "description": "Analyze the quality of ergonomics and accessibility"
+      }
     ],
     "links": {
       "github": "https://github.com/DBouraoui/Boilerplate-symfony",
@@ -250,18 +537,81 @@
   },
   {
     "title": "End of Year Project - Mobalpa Marseille",
-    "subTitle": "Development of a showcase e-commerce website and administrator for Mobalpa Marseille",
-    "description": "As part of the end-of-first-year project at Epitech, in partnership with Mobalpa Marseille, our team of 4 students designed and developed a complete website in 6 effective weeks. The project included a showcase e-commerce site allowing customers to browse and quickly filter appliances, furnished rooms (bedrooms, bathrooms, dressing rooms...), as well as an interactive map to locate stores, a contact page and a section tracing the company's history. On the administrator side, a complete panel allowed managing orders, payments, promotions and site content. The project required significant technical and organizational preparation work: research and integration of product visuals, creation of all data, role distribution and implementation of collaborative best practices. Built with React and Tailwind for the front-end and Symfony as REST API for the back-end.",
-    "tags": ["Web", "E-commerce", "React", "Symfony", "Student Project"],
+    "subTitle": "Development of an e-commerce showcase and administrator site for Mobalpa Marseille",
+    "description": "As part of the end-of-year project for the first year at Epitech, in partnership with Mobalpa Marseille, our team of 4 students designed and developed a complete website in 6 effective weeks. The project included an e-commerce showcase site allowing customers to consult and quickly filter household appliances, fitted rooms (bedrooms, bathrooms, walk-in closets...), as well as an interactive map to locate stores, a contact page and a section tracing the company's history. On the administrator side, a complete panel allowed easy content management: adding and modifying menus, updating hours, managing opening locations, as well as modifying photos and events.",
+    "tags": ["E-commerce", "React", "Symfony", "MySQL"],
     "technologies": ["React", "TailwindCSS", "Symfony", "API REST", "MYSQL8.0"],
     "creationDate": "2023-06-15",
     "timeToDev": "6 weeks",
     "caliopiSkills": [
-      "Teamwork",
-      "Project Organization",
-      "Frontend Development",
-      "Backend Development",
-      "Data Management"
+      {
+        "id": "RNCP02-1",
+        "description": "Develop the web solution prototype to present the technical architecture to the client"
+      },
+      {
+        "id": "RNCP01-4",
+        "description": "Create a mockup of the e-commerce interface"
+      },
+      {
+        "id": "RNCP01-5",
+        "description": "Identify features to develop (front-end + back-end)"
+      },
+      {
+        "id": "RNCP01-6",
+        "description": "Write a presentation of technical choices (React + Symfony API)"
+      },
+      {
+        "id": "RNCP02-2",
+        "description": "Write the solution code (React and Symfony)"
+      },
+      {
+        "id": "RNCP02-3",
+        "description": "Integrate components (front and back)"
+      },
+      {
+        "id": "RNCP02-4",
+        "description": "Implement front-end (React + Tailwind)"
+      },
+      {
+        "id": "RNCP02-5",
+        "description": "Implement back-end logic (Symfony API REST)"
+      },
+      {
+        "id": "RNCP02-6",
+        "description": "Implement authentication rules for the admin area"
+      },
+      {
+        "id": "RNCP02-7",
+        "description": "Implement a testing plan for key features"
+      },
+      {
+        "id": "RNCP02-8",
+        "description": "Deploy the application"
+      },
+      {
+        "id": "RNCP03-1",
+        "description": "Write comprehensive technical documentation"
+      },
+      {
+        "id": "RNCP03-2",
+        "description": "Write user documentation for the client"
+      },
+      {
+        "id": "RNCP03-3",
+        "description": "Monitor the solution launch"
+      },
+      {
+        "id": "RNCP03-4",
+        "description": "Identify qualitative improvements after launch"
+      },
+      {
+        "id": "RNCP03-5",
+        "description": "Analyze the quality of ergonomics and accessibility"
+      },
+      {
+        "id": "RNCP03-6",
+        "description": "Write an argumentative document for future improvements"
+      }
     ],
     "links": {
       "github": "https://github.com/dylanepitech/archideco-front",

@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 const timeline = [
   {
     date: 'timeline.items.0.date',

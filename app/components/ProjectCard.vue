@@ -16,7 +16,6 @@
         class="mb-12 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50"
       >
         <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
-          <!-- Filtre par type/tag -->
           <div class="flex flex-wrap gap-3">
             <UButton
               :variant="selectedTag === 'all' ? 'solid' : 'soft'"
@@ -42,7 +41,6 @@
         </div>
       </div>
 
-      <!-- Compteur de résultats -->
       <div class="mb-8 text-center">
         <p class="text-gray-600 dark:text-gray-400">
           <span class="font-semibold text-primary-600 dark:text-primary-400">{{
@@ -53,7 +51,6 @@
         </p>
       </div>
 
-      <!-- Grid des projets -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(project, index) in filteredProjects"
@@ -115,54 +112,63 @@
                 </UButton>
                 <template #content>
                   <div
-                    class="p-8 min-w-[32rem] max-w-4xl h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50/80 dark:from-gray-900 dark:to-gray-800/50"
+                    class="p-4 sm:p-8 w-full sm:min-w-[32rem] sm:max-w-4xl h-full overflow-y-auto bg-gradient-to-br from-white to-gray-50/80 dark:from-gray-900 dark:to-gray-800/50"
                   >
                     <div
-                      class="mb-10 p-6 -m-6 bg-gradient-to-r from-green-50/50 to-blue-50/30 dark:from-green-900/20 dark:to-blue-900/10 rounded-xl border border-green-100/50 dark:border-green-800/30"
+                      class="mb-6 sm:mb-10 p-4 sm:p-6 -m-4 sm:-m-6 bg-gradient-to-r from-green-50/50 to-blue-50/30 dark:from-green-900/20 dark:to-blue-900/10 rounded-xl border border-green-100/50 dark:border-green-800/30"
                     >
                       <h2
-                        class="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text"
+                        class="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text"
                       >
                         {{ project.title }}
                       </h2>
-                      <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p
+                        class="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed"
+                      >
                         {{ project.subTitle }}
                       </p>
                     </div>
 
-                    <div class="mb-10 p-1 rounded-2xl">
+                    <div class="mb-6 sm:mb-10 p-1 rounded-2xl">
                       <UCarousel
                         v-slot="{ item }"
                         :items="project.images.carousel"
                         arrows
+                        dots
                         :prev="{ color: 'primary' }"
                         :next="{ variant: 'solid' }"
                         class="w-full max-w-lg mx-auto"
                       >
-                        <img :src="item" class="w-full h-80 object-cover" :alt="project.title" />
+                        <img
+                          :src="item"
+                          class="w-full h-60 sm:h-80 object-cover rounded-lg"
+                          :alt="project.title"
+                        />
                       </UCarousel>
                     </div>
 
                     <div
-                      class="mb-10 p-6 bg-white/80 dark:bg-gray-800/80 rounded-xl border border-gray-200/60 dark:border-gray-700/60 shadow-sm backdrop-blur-sm"
+                      class="mb-6 sm:mb-10 p-4 sm:p-6 bg-white/80 dark:bg-gray-800/80 rounded-xl border border-gray-200/60 dark:border-gray-700/60 shadow-sm backdrop-blur-sm"
                     >
                       <h3
-                        class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100 flex items-center"
+                        class="text-lg sm:text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100 flex items-center"
                       >
                         <span
                           class="w-1 h-6 bg-gradient-to-b from-green-500 to-blue-500 rounded-full mr-3"
                         ></span>
                         Description
                       </h3>
-                      <p class="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                      <p
+                        class="text-gray-700 dark:text-gray-300 leading-relaxed text-base sm:text-lg"
+                      >
                         {{ project.description }}
                       </p>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
-                      <div class="space-y-6">
+                    <div class="grid grid-cols-1 gap-4 sm:gap-6 mb-6 sm:mb-10">
+                      <div class="space-y-4 sm:space-y-6">
                         <div
-                          class="p-5 bg-blue-50/50 dark:bg-blue-900/20 rounded-xl border border-blue-100/60 dark:border-blue-800/40"
+                          class="p-4 sm:p-5 bg-blue-50/50 dark:bg-blue-900/20 rounded-xl border border-blue-100/60 dark:border-blue-800/40"
                         >
                           <h4
                             class="font-semibold text-blue-800 dark:text-blue-200 mb-3 text-sm uppercase tracking-wider flex items-center"
@@ -175,7 +181,7 @@
                               v-for="tech in project.technologies"
                               :key="tech"
                               variant="soft"
-                              class="px-3 py-1.5 shadow-sm"
+                              class="px-2 py-1 sm:px-3 sm:py-1.5 shadow-sm text-xs sm:text-sm"
                             >
                               {{ tech }}
                             </UBadge>
@@ -183,60 +189,85 @@
                         </div>
 
                         <div
-                          class="p-5 bg-purple-50/50 dark:bg-purple-900/20 rounded-xl border border-purple-100/60 dark:border-purple-800/40"
+                          class="p-4 sm:p-5 bg-purple-50/50 dark:bg-purple-900/20 rounded-xl border border-purple-100/60 dark:border-purple-800/40"
                         >
                           <h4
-                            class="font-semibold text-purple-800 dark:text-purple-200 mb-3 text-sm uppercase tracking-wider flex items-center"
+                            class="font-semibold text-purple-800 dark:text-purple-200 mb-4 text-sm uppercase tracking-wider flex items-center"
                           >
                             <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            Compétences clées
+                            Compétences clés
                           </h4>
-                          <div class="flex flex-wrap gap-2">
-                            <UBadge
+
+                          <div class="space-y-3">
+                            <div
                               v-for="skill in project.caliopiSkills"
-                              :key="skill"
-                              variant="soft"
-                              class="px-3 py-1.5 shadow-sm"
+                              :key="skill.code"
+                              class="group relative p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg border border-purple-100/50 dark:border-purple-800/50 hover:bg-white/80 dark:hover:bg-gray-800/80 transition-all duration-200"
                             >
-                              {{ skill }}
-                            </UBadge>
+                              <div class="flex items-start justify-between mb-2">
+                                <UBadge
+                                  variant="soft"
+                                  color="purple"
+                                  class="px-2 py-1 text-xs font-mono tracking-tight"
+                                >
+                                  {{ skill.code }}
+                                </UBadge>
+
+                                <div
+                                  class="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                                >
+                                  <UIcon
+                                    name="i-heroicons-information-circle"
+                                    class="w-4 h-4 text-purple-500"
+                                  />
+                                </div>
+                              </div>
+
+                              <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                                {{ skill.description }}
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="space-y-6">
-                        <div
-                          class="p-5 bg-emerald-50/50 dark:bg-emerald-900/20 rounded-xl border border-emerald-100/60 dark:border-emerald-800/40"
-                        >
-                          <h4
-                            class="font-semibold text-emerald-800 dark:text-emerald-200 mb-3 text-sm uppercase tracking-wider flex items-center"
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                          <div
+                            class="p-4 sm:p-5 bg-emerald-50/50 dark:bg-emerald-900/20 rounded-xl border border-emerald-100/60 dark:border-emerald-800/40"
                           >
-                            <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
-                            Date de création
-                          </h4>
-                          <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">
-                            {{ project.creationDate }}
-                          </p>
-                        </div>
+                            <h4
+                              class="font-semibold text-emerald-800 dark:text-emerald-200 mb-3 text-sm uppercase tracking-wider flex items-center"
+                            >
+                              <span class="w-2 h-2 bg-emerald-500 rounded-full mr-2"></span>
+                              Date de création
+                            </h4>
+                            <p
+                              class="text-gray-700 dark:text-gray-300 text-base sm:text-lg font-medium"
+                            >
+                              {{ project.creationDate }}
+                            </p>
+                          </div>
 
-                        <div
-                          class="p-5 bg-orange-50/50 dark:bg-orange-900/20 rounded-xl border border-orange-100/60 dark:border-orange-800/40"
-                        >
-                          <h4
-                            class="font-semibold text-orange-800 dark:text-orange-200 mb-3 text-sm uppercase tracking-wider flex items-center"
+                          <div
+                            class="p-4 sm:p-5 bg-orange-50/50 dark:bg-orange-900/20 rounded-xl border border-orange-100/60 dark:border-orange-800/40"
                           >
-                            <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                            Durée de développement
-                          </h4>
-                          <p class="text-gray-700 dark:text-gray-300 text-lg font-medium">
-                            {{ project.timeToDev }}
-                          </p>
+                            <h4
+                              class="font-semibold text-orange-800 dark:text-orange-200 mb-3 text-sm uppercase tracking-wider flex items-center"
+                            >
+                              <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                              Durée de développement
+                            </h4>
+                            <p
+                              class="text-gray-700 dark:text-gray-300 text-base sm:text-lg font-medium"
+                            >
+                              {{ project.timeToDev }}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <div
-                      class="flex flex-col sm:flex-row gap-4 pt-8 border-t border-gradient-to-r from-green-200/50 via-blue-200/50 to-purple-200/50 dark:from-green-800/30 dark:via-blue-800/30 dark:to-purple-800/30"
+                      class="flex flex-col gap-3 sm:gap-4 pt-6 sm:pt-8 border-t border-gradient-to-r from-green-200/50 via-blue-200/50 to-purple-200/50 dark:from-green-800/30 dark:via-blue-800/30 dark:to-purple-800/30"
                     >
                       <UButton
                         v-if="project.links.github"
@@ -246,7 +277,7 @@
                         variant="solid"
                         size="lg"
                         icon="i-simple-icons-github"
-                        class="flex-1 justify-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                        class="w-full justify-center shadow-md hover:shadow-lg transition-shadow duration-300"
                       >
                         Voir sur GitHub
                       </UButton>
@@ -258,7 +289,7 @@
                         variant="solid"
                         size="lg"
                         icon="i-heroicons-arrow-top-right-on-square"
-                        class="flex-1 justify-center shadow-md hover:shadow-lg transition-shadow duration-300"
+                        class="w-full justify-center shadow-md hover:shadow-lg transition-shadow duration-300"
                       >
                         Voir le site
                       </UButton>
@@ -298,9 +329,14 @@ interface Project {
   technologies: string[]
   creationDate: string
   timeToDev: string
-  caliopiSkills: string[]
+  caliopiSkills: CaliopiSkills[]
   links: { github?: string; live?: string }
   images: { card: string; carousel: string[] }
+}
+
+interface CaliopiSkills {
+  code: string
+  description: string
 }
 
 const projects = ref<Project[]>([])
