@@ -189,28 +189,28 @@
                         </div>
 
                         <div
-                          class="p-4 sm:p-5 bg-purple-50/50 dark:bg-purple-900/20 rounded-xl border border-purple-100/60 dark:border-purple-800/40"
+                          class="p-4 sm:p-5 bg-purple-50/50 dark:bg-amber-900/20 rounded-xl border border-amber-100/60 dark:border-amber-800/40"
                         >
                           <h4
-                            class="font-semibold text-purple-800 dark:text-purple-200 mb-4 text-sm uppercase tracking-wider flex items-center"
+                            class="font-semibold text-amber-800 dark:text-amber-200 mb-4 text-sm uppercase tracking-wider flex items-center"
                           >
-                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            <span class="w-2 h-2 bg-amber-500 rounded-full mr-2"></span>
                             Compétences clés
                           </h4>
 
                           <div class="space-y-3">
                             <div
                               v-for="skill in project.caliopiSkills"
-                              :key="skill.code"
-                              class="group relative p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg border border-purple-100/50 dark:border-purple-800/50 hover:bg-white/80 dark:hover:bg-gray-800/80 transition-all duration-200"
+                              :key="skill.id"
+                              class="group relative p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg border border-amber-100/50 dark:border-amber-800/50 hover:bg-white/80 dark:hover:bg-gray-800/80 transition-all duration-200"
                             >
                               <div class="flex items-start justify-between mb-2">
                                 <UBadge
                                   variant="soft"
-                                  color="purple"
+                                  color="amber"
                                   class="px-2 py-1 text-xs font-mono tracking-tight"
                                 >
-                                  {{ skill.code }}
+                                  {{ skill.id }}
                                 </UBadge>
 
                                 <div
@@ -218,7 +218,7 @@
                                 >
                                   <UIcon
                                     name="i-heroicons-information-circle"
-                                    class="w-4 h-4 text-purple-500"
+                                    class="w-4 h-4 text-amber-500"
                                   />
                                 </div>
                               </div>
@@ -267,7 +267,7 @@
                     </div>
 
                     <div
-                      class="flex flex-col gap-3 sm:gap-4 pt-6 sm:pt-8 border-t border-gradient-to-r from-green-200/50 via-blue-200/50 to-purple-200/50 dark:from-green-800/30 dark:via-blue-800/30 dark:to-purple-800/30"
+                      class="flex flex-col gap-3 sm:gap-4 pt-6 sm:pt-8 border-t border-gradient-to-r from-green-200/50 via-blue-200/50 to-amber-200/50 dark:from-green-800/30 dark:via-blue-800/30 dark:to-amber-800/30"
                     >
                       <UButton
                         v-if="project.links.github"
@@ -335,7 +335,7 @@ interface Project {
 }
 
 interface CaliopiSkills {
-  code: string
+  id: string
   description: string
 }
 
