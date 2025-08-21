@@ -20,16 +20,16 @@
           </li>
           <li>
             <NuxtLink
-              :to="{ path: '/', hash: '#graduation' }"
+              :to="{ path: '/', hash: '#skills' }"
               class="hover:text-green-400 transition"
-              >{{ $t('common.graduation') }}</NuxtLink
+              >{{ $t('common.skills') }}</NuxtLink
             >
           </li>
           <li>
             <NuxtLink
-              :to="{ path: '/', hash: '#skills' }"
+              :to="{ path: '/', hash: '#graduation' }"
               class="hover:text-green-400 transition"
-              >{{ $t('common.skills') }}</NuxtLink
+              >{{ $t('common.graduation') }}</NuxtLink
             >
           </li>
           <li>

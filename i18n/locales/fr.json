@@ -141,5 +141,35 @@
     "github": "Mon profil GitHub",
     "instagram": "Mon profil Instagram",
     "twitter": "Mon profil Twitter"
+  },
+  "rncp": {
+    "loading": "Chargement des données...",
+    "title": "Compétences RNCP",
+    "subtitle": "Validation des compétences par les projets",
+    "validated": "Validées",
+    "pending": "Non validées",
+    "total": "Total",
+    "block": "Bloc",
+    "validated_by": "Validée par ces projets",
+    "status": {
+      "validated": "Validée",
+      "pending": "Non validée"
+    },
+    "filters": {
+      "all": "Toutes ({count})",
+      "validated": "Validées ({count})",
+      "pending": "Non validées ({count})"
+    },
+    "blocks": {
+      "01": {
+        "title": "Cadrer un projet de développement"
+      },
+      "02": {
+        "title": "Développer une solution web"
+      },
+      "03": {
+        "title": "Assurer la qualité d'une solution web"
+      }
+    }
   }
 }

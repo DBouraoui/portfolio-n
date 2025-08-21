@@ -2,12 +2,12 @@
 const menuItems = [
   { label: 'common.home', to: { path: '/', hash: '#hero' }, icon: 'i-heroicons-home' },
   { label: 'common.about', to: { path: '/', hash: '#about' }, icon: 'i-lucide-info' },
+  { label: 'common.skills', to: { path: '/', hash: '#skills' }, icon: 'i-heroicons-code-bracket' },
   {
     label: 'common.graduation',
     to: { path: '/', hash: '#graduation' },
     icon: 'i-lucide-graduation-cap',
   },
-  { label: 'common.skills', to: { path: '/', hash: '#skills' }, icon: 'i-heroicons-code-bracket' },
   { label: 'common.project', to: { path: '/', hash: '#projects' }, icon: 'i-heroicons-folder' },
   { label: 'common.contact', to: { path: '/', hash: '#contact' }, icon: 'i-heroicons-envelope' },
 ]

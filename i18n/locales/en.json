@@ -141,5 +141,35 @@
     "github": "My GitHub profile",
     "instagram": "My Instagram profile",
     "twitter": "My Twitter profile"
+  },
+  "rncp": {
+    "loading": "Loading data...",
+    "title": "RNCP Skills",
+    "subtitle": "Skill validation through projects",
+    "validated": "Validated",
+    "pending": "Pending",
+    "total": "Total",
+    "block": "Block",
+    "validated_by": "Validated by these projects",
+    "status": {
+      "validated": "Validated",
+      "pending": "Pending"
+    },
+    "filters": {
+      "all": "All ({count})",
+      "validated": "Validated ({count})",
+      "pending": "Pending ({count})"
+    },
+    "blocks": {
+      "01": {
+        "title": "Frame a development project"
+      },
+      "02": {
+        "title": "Develop a web solution"
+      },
+      "03": {
+        "title": "Ensure quality of a web solution"
+      }
+    }
   }
 }
