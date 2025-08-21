@@ -10,7 +10,34 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Mon Portfolio - Développeur Web',
+      title: 'Dylan Bouraoui - Développeur Web',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content:
+            'Portfolio de Dylan Bouraoui, développeur web. Découvrez mes projets et compétences.',
+        },
+        {
+          name: 'keywords',
+          content: 'développeur web, portfolio, projets, compétences, développement web',
+        },
+        { name: 'author', content: 'Dylan Bouraoui' },
+        { property: 'og:title', content: 'Mon Portfolio - Développeur Web' },
+        {
+          property: 'og:description',
+          content:
+            'Portfolio de Dylan Bouraoui, développeur web. Découvrez mes projets et compétences.',
+        },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://dbouraoui.fr' },
+        { property: 'og:image', content: 'https://dbouraoui.fr/head.png' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/head.png' },
+        { rel: 'canonical', href: 'https://dbouraoui.fr' },
+      ],
     },
   },
   i18n: {
