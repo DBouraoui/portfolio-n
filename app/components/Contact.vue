@@ -113,6 +113,14 @@
                   {{ $t('contact.location') }}
                 </span>
               </div>
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0">
+                  <UIcon name="i-heroicons-document-arrow-down" class="w-6 h-6 text-gray-500" />
+                </div>
+                <a class="text-gray-600 dark:text-gray-300 text-lg" href="/Dbouraoui.pdf" target="_blank">
+                  {{ $t('contact.cv') }}
+                </a>
+              </div>
             </div>
             <div class="pt-6">
               <h3 class="text-xl font-medium text-gray-900 dark:text-white mb-4">
@@ -163,7 +171,7 @@ const onSubmit = async () => {
     console.log('Form submitted:', form.value)
     submitStatus.value = 'success'
     form.value = { name: '', email: '', message: '' }
-  } catch (error) {
+  } catch (err) {
     submitStatus.value = 'error'
   }
 }

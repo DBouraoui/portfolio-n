@@ -10,7 +10,9 @@
     "and": "et",
     "about": "A propos",
     "graduation": "Formation",
-    "email": "{'contact@dbouraoui.fr'}"
+    "email": "{'contact@dbouraoui.fr'}",
+    "github-one": "Personel",
+    "github-two": "Étudiant"
   },
 
   "home": {
@@ -120,6 +122,7 @@
     "subtitle": "Pour toute question ou collaboration, n'hésitez pas à me contacter. Je réponds généralement sous 24h.",
     "info": "Mes coordonnées",
     "location": "Toulon, France",
+    "cv": "Télécharger mon cv",
     "social": "Mes réseaux",
     "form": {
       "name": "Nom complet",

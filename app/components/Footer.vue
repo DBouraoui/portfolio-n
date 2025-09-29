@@ -60,7 +60,7 @@
             aria-label="GitHub"
             class="hover:text-green-400 transition"
           >
-            <p>Perso</p>
+            <p>{{ $t('common.github-one') }}</p>
             <Icon name="mdi:github" size="28" />
           </NuxtLink>
           <NuxtLink
@@ -69,7 +69,7 @@
             aria-label="GitHub"
             class="hover:text-green-400 transition"
           >
-            <p>Etudiant</p>
+            <p>{{ $t('common.github-two') }}</p>
             <Icon name="mdi:github" size="28" />
           </NuxtLink>
           <NuxtLink
@@ -90,4 +90,5 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
