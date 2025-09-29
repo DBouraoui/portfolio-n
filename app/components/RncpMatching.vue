@@ -50,25 +50,25 @@
     <div class="flex flex-wrap gap-3">
       <UButton
         :variant="filter === 'all' ? 'solid' : 'soft'"
-        @click="filter = 'all'"
         size="sm"
         color="primary"
+        @click="filter = 'all'"
       >
         {{ $t('rncp.filters.all', { count: skills.length }) }}
       </UButton>
       <UButton
         :variant="filter === 'validated' ? 'solid' : 'soft'"
-        @click="filter = 'validated'"
         color="info"
         size="sm"
+        @click="filter = 'validated'"
       >
         {{ $t('rncp.filters.validated', { count: validatedSkillsCount }) }}
       </UButton>
       <UButton
         :variant="filter === 'pending' ? 'solid' : 'soft'"
         color="warning"
-        @click="filter = 'pending'"
         size="sm"
+        @click="filter = 'pending'"
       >
         {{ $t('rncp.filters.pending', { count: notValidatedSkillsCount }) }}
       </UButton>

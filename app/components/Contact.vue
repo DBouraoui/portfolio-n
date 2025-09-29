@@ -18,7 +18,7 @@
       </div>
       <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start w-full">
         <div class="w-full lg:w-2/3 space-y-8">
-          <UForm :schema="schema" :state="form" @submit="onSubmit" class="space-y-8">
+          <UForm :schema="schema" :state="form" class="space-y-8" @submit="onSubmit">
             <UFormField
               name="name"
               :label="$t('contact.form.name')"
@@ -117,7 +117,11 @@
                 <div class="flex-shrink-0">
                   <UIcon name="i-heroicons-document-arrow-down" class="w-6 h-6 text-gray-500" />
                 </div>
-                <a class="text-gray-600 dark:text-gray-300 text-lg" href="/Dbouraoui.pdf" target="_blank">
+                <a
+                  class="text-gray-600 dark:text-gray-300 text-lg"
+                  href="/Dbouraoui.pdf"
+                  target="_blank"
+                >
                   {{ $t('contact.cv') }}
                 </a>
               </div>
@@ -151,7 +155,9 @@
 import { object, string } from 'yup'
 const schema = object({
   name: string().required($t('contact.form.required.name')),
-  email: string().email($t('contact.form.valid_email')).required($t('contact.form.required.email')),
+  email: string()
+    .email($t('contact.form.required.valid_email'))
+    .required($t('contact.form.required.email')),
   message: string().required($t('contact.form.required.message')),
 })
 const form = ref({
@@ -167,10 +173,17 @@ const socials = [
 const onSubmit = async () => {
   submitStatus.value = null
   try {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    console.log('Form submitted:', form.value)
-    submitStatus.value = 'success'
-    form.value = { name: '', email: '', message: '' }
+    const res = await $fetch('/api/contact', {
+      method: 'POST',
+      body: form.value,
+    })
+
+    if (res.status === 'success') {
+      submitStatus.value = 'success'
+      form.value = { name: '', email: '', message: '' }
+    } else {
+      submitStatus.value = 'error'
+    }
   } catch (err) {
     submitStatus.value = 'error'
   }

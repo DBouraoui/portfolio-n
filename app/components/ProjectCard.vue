@@ -21,8 +21,8 @@
               :variant="selectedTag === 'all' ? 'solid' : 'soft'"
               :color="selectedTag === 'all' ? 'primary' : 'gray'"
               size="sm"
-              @click="selectedTag = 'all'"
               class="transition-all duration-200"
+              @click="selectedTag = 'all'"
             >
               Tous les projets ({{ projects.length }})
             </UButton>
@@ -32,8 +32,8 @@
               :variant="selectedTag === tag ? 'solid' : 'soft'"
               :color="selectedTag === tag ? 'primary' : 'gray'"
               size="sm"
-              @click="selectedTag = tag"
               class="transition-all duration-200"
+              @click="selectedTag = tag"
             >
               {{ tag }} ({{ getProjectCountByTag(tag) }})
             </UButton>
