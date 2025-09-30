@@ -14,6 +14,19 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS,
   },
+  ssr: true,
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/en', '/fr'],
+      ignore: [],
+    },
+  },
+  image: {
+    formats: ['webp', 'avif'],
+    quality: 80,
+  },
   app: {
     head: {
       title: 'Dylan Bouraoui - Développeur Web',
