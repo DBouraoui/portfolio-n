@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxtjs/i18n'],
+  modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/icon'],
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],
@@ -21,6 +21,11 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/', '/en'],
       ignore: [],
+    },
+  },
+  icon: {
+    serverBundle: {
+      collections: ['heroicons', 'lucide'],
     },
   },
   image: {
