@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS,
   },
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: 'static',
     prerender: {
