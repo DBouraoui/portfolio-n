@@ -29,6 +29,7 @@
           </UButton>
           <UButton
             size="lg"
+            :to="{ path: '/', hash: '#contact' }"
             variant="ghost"
             class="border border-gray-900 hover:bg-white/10 dark:border-gray-400 dark:hover:bg-gray-700 cursor-pointer"
           >
