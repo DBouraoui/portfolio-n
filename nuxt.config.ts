@@ -14,13 +14,13 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS,
   },
-  ssr: false,
+  ssr: true,
   nitro: {
-    preset: 'static',
+    preset: 'node-server',
+    serveStatic: true,
     prerender: {
       crawlLinks: true,
       routes: ['/', '/en'],
-      ignore: [],
     },
   },
   icon: {
