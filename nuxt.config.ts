@@ -18,10 +18,6 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node-server',
     serveStatic: true,
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/en'],
-    },
   },
   icon: {
     serverBundle: {
