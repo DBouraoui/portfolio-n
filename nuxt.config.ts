@@ -16,12 +16,12 @@ export default defineNuxtConfig({
   },
   ssr: true,
   nitro: {
-        preset: 'vercel', // ← Change crucial ici
-        prerender: {
-            crawlLinks: true,
-            routes: ['/', '/en'],
-        },
+    preset: 'vercel',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/en'],
     },
+  },
   icon: {
     serverBundle: {
       collections: ['heroicons', 'lucide'],

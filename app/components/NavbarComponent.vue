@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+const open = ref(false)
 const menuItems = [
   { label: 'common.home', to: { path: '/', hash: '#hero' }, icon: 'i-heroicons-home' },
   { label: 'common.about', to: { path: '/', hash: '#about' }, icon: 'i-lucide-info' },
@@ -41,6 +42,7 @@ const menuItems = [
         <TraductionModeButton />
 
         <USlideover
+          v-model:open="open"
           side="left"
           class="backdrop-blur-lg bg-white/95 dark:bg-slate-900/95 border-r border-gray-200 dark:border-white/20 transition-colors"
         >
@@ -48,6 +50,7 @@ const menuItems = [
             icon="i-heroicons-bars-3"
             variant="ghost"
             class="cursor-pointer lg:hidden text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+            @click="open = true"
           />
 
           <template #header>
@@ -56,7 +59,15 @@ const menuItems = [
                 <Icon name="i-lucide-home" />
                 <h2 class="text-lg font-semibold text-gray-900 dark:text-white">Menu</h2>
               </div>
-              <ColorModeButton />
+              <div class="flex items-center gap-2">
+                <ColorModeButton />
+                <UButton
+                  icon="i-lucide-x"
+                  variant="ghost"
+                  class="cursor-pointer text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                  @click="open = false"
+                />
+              </div>
             </div>
           </template>
 
@@ -67,6 +78,7 @@ const menuItems = [
                   <NuxtLink
                     :to="item.to"
                     class="group flex items-center space-x-3 text-gray-600 dark:text-white/80 text-base py-3 px-2 rounded-lg hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-all duration-200"
+                    @click="open = false"
                   >
                     <UIcon
                       :name="item.icon"
